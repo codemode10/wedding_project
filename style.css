@@ -4,29 +4,44 @@
     width: 90vw;
     margin: 0 auto;
     margin-bottom: 5%;
+    margin-top: 3%;
   }
 
   .section1-container {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-    padding: 30px;
-    height: 70vh;
-    
-  }
-  
-  .left-section1 {
-    flex-basis: 50%;
-    margin-right: 5%;
-    margin: auto;
-    color: #b36a5e;
     text-align: center;
+    border-radius: 20px;
+    padding: 70px;
+    background-image: url("images/chavhouse.png"); /* Set the background image */
+    background-size: cover; /* Make sure the image covers the entire banner */
+    background-position: center; /* Center the image */
+    height: 67vh; /* Set the height of the banner */
+    position: relative;
   }
 
-  .right-section1 {
-    flex-basis: 50%;
-    margin: auto;
+  .bannerh2 {
+    margin-bottom: 5vh;
   }
+  .RSVP {
+    margin-top: 10vh;
+    padding: 10px 20px;
+    background-color: #5F8575;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .RSVP:hover {
+    margin-top: 10vh;
+    padding: 10px 20px;
+    background-color: #7ba795;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
   
   .section2-container {
     display: flex;
@@ -39,7 +54,7 @@
   
   .left-section2 {
     flex-basis: 50%;
-    margin: auto;
+    margin: auto;    
   }
   
   .right-section2 {
@@ -65,6 +80,7 @@
     margin: auto;
     color: #b36a5e;
     text-align: center;
+    padding-left: 5%;
   }
 
   .right-section3 {
@@ -120,27 +136,24 @@
     text-align: center;
     justify-content: space-between;
     border-radius: 20px;
-    padding: 30px;
-    border: 1px solid #b36a5e;
-  
+    padding: 40px;
   }
   
   .traveldiv1 {
     display: flex;
     justify-content: space-between;
     margin-top: 10vh;
-    
   }
   
   .left-section6 {
     flex-basis: 50%;
     margin: auto;
     margin-right: 5%;
+    text-align: center;
   }
   
   .right-section6 {
     flex-basis: 50%;
-    margin-right: 5%;
     margin: auto;
     color: #b36a5e;
     text-align: center;
@@ -176,6 +189,47 @@
   border-radius: 20px;
 }
 
+.traveldiv3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+
+.left-section-travel-3{
+  flex-basis: 50%;
+  margin: auto;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.right-section-travel-3{
+  flex-basis: 50%;
+  margin: auto;
+  color: #b36a5e;
+  text-align: center;
+}
+
+.traveldiv4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+
+.left-section-travel-4{
+  flex-basis: 50%;
+  margin: auto;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.right-section-travel-4{
+  flex-basis: 50%;
+  margin: auto;
+  color: #b36a5e;
+  text-align: center;
+}
+
+
   .icon-container {
     height: auto;
     display: flex;
@@ -199,7 +253,7 @@
   }
 
   .img1 {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
   }
 
@@ -234,4 +288,64 @@
 
   p {
     font-size: 16px;
+  }
+
+  .travelp {
+    text s
+  }
+
+  .mapbutton {
+    border-radius: 5px;
+    background-color: #5F8575; /* Set the background color */
+    border: none; /* Remove border */
+    color: white; /* Set text color to white */
+    padding: 12px 24px; /* Set padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Set as block element */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+  .mapbutton:hover {
+    border-radius: 5px;
+    background-color: #73a892; /* Set the background color */
+    border: none; /* Remove border */
+    color: white; /* Set text color to white */
+    padding: 12px 24px; /* Set padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Set as block element */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+  .mapbutton2 {
+    border-radius: 5px;
+    background-color: #5F8575; /* Set the background color */
+    border: none; /* Remove border */
+    color: white; /* Set text color to white */
+    padding: 12px 24px; /* Set padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Set as block element */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+  .mapbutton2:hover {
+    border-radius: 5px;
+    background-color: #73a892; /* Set the background color */
+    border: none; /* Remove border */
+    color: white; /* Set text color to white */
+    padding: 12px 24px; /* Set padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Set as block element */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
   }
