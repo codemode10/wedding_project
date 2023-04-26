@@ -432,7 +432,7 @@
       background-image: url("images/chavhouse.png"); /* Set the background image */
       background-size: cover; /* Make sure the image covers the entire banner */
       background-position: center; /* Center the image */
-      height: 67vh; /* Set the height of the banner */
+      height: 75vh; /* Set the height of the banner */
     
     }
   
@@ -483,6 +483,7 @@
       border-radius: 30px;
       padding: 20px;
       border: none;
+      box-shadow: 10px 10px #ff9888;
     }
     
     .left-section2 {
@@ -500,11 +501,11 @@
     .section3-container {
       display: flex;
       flex-direction: column-reverse;
-      
       height: auto;
       border-radius: 30px;
-      padding: 40px;
+      padding: 50px;
       border: none;
+      box-shadow: 10px 10px #ff9888;
     }
     
     .left-section3 {
@@ -526,7 +527,8 @@
     }
   
     .section4-container {
-      flex-direction: column;
+      display: flex;
+      flex-direction: column-reverse;
       border-radius: 30px;
       padding: 30px;
       height: 60vh;
@@ -572,6 +574,7 @@
       padding: 40px;
       
       
+      
     }
     
     .traveldiv1 {
@@ -583,7 +586,7 @@
     .left-section6 {
       flex-basis: 50%;
       margin: auto;
-      margin-right: 5%;
+      
       text-align: center;
     }
     
@@ -600,7 +603,8 @@
     }
   
     .traveldiv2 {
-      flex-direction: column;
+      display: flex;
+      flex-direction: column-reverse;
       justify-content: space-between;
       margin-top: 10vh;
     }
@@ -608,7 +612,7 @@
     .left-section7 {
       flex-basis: 50%;
       margin: auto;
-      margin-right: 5%;
+      
     }
     
     .right-section7 {
@@ -633,7 +637,6 @@
   .left-section-travel-3{
     flex-basis: 50%;
     margin: auto;
-    margin-right: 5%;
     text-align: center;
   }
   
@@ -645,14 +648,14 @@
   }
   
   .traveldiv4 {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
     margin-top: 10vh;
   }
   
   .left-section-travel-4{
     flex-basis: 50%;
     margin: auto;
-    margin-right: 5%;
     text-align: center;
   }
   
@@ -671,7 +674,6 @@
   .left-section-travel-5{
     flex-basis: 50%;
     margin: auto;
-    margin-right: 5%;
     text-align: center;
   }
   
@@ -683,14 +685,14 @@
   }
   
   .traveldiv6 {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
     margin-top: 10vh;
   }
   
   .left-section-travel-6{
     flex-basis: 50%;
     margin: auto;
-    margin-right: 5%;
     text-align: center;
   }
   
@@ -749,6 +751,9 @@
   
     h1 {
       font-size: 60px;
+    }
+    .h1-red {
+      font-size: 50px;
     }
       
     h2 {
