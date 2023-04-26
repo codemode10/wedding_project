@@ -32,14 +32,14 @@
     align-items: center;
   }
   
-  .button-group .RSVP{
+  .button-group .top-button{
     margin-left: auto; /* Push the last button to the right */
   }
   
   
 
 
-  .RSVP {
+  .top-button {
     
     margin: 10px 0;
     padding: 0.5em 1em;
@@ -51,7 +51,7 @@
     border-radius: 5px;
   }
 
-  .RSVP:hover {
+  .top-button:hover {
     
     background-color: #7ba795;
     color: white;
@@ -64,7 +64,7 @@
     justify-content: space-between;
     border-radius: 20px;
     padding: 30px;
-    height: 75vh;
+    height: 60vh;
     border: 1px solid #b36a5e;
   }
   
@@ -87,7 +87,7 @@
     justify-content: space-between;
     border-radius: 20px;
     padding: 30px;
-    height: 70vh;
+    height: 60vh;
     border: 1px solid #b36a5e;
   }
   
@@ -110,7 +110,7 @@
     justify-content: space-between;
     border-radius: 20px;
     padding: 30px;
-    height: 75vh;
+    height: 60vh;
     border: 1px solid #b36a5e;
   }
   
@@ -155,6 +155,8 @@
     justify-content: space-between;
     border-radius: 20px;
     padding: 40px;
+    
+    
   }
   
   .traveldiv1 {
@@ -406,4 +408,349 @@
     font-size: 16px; /* Set font size */
     margin: 4px 2px; /* Add some margin */
     cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+  @media screen and (max-width: 1000px) {
+    .page-container {
+      width: 90vw;
+      margin: 0 auto;
+      margin-bottom: 5%;
+      margin-top: 3%;
+      
+    }
+  
+    .section1-container {
+      text-align: center;
+      border-radius: 30px;
+      padding: 90px;
+      background-image: url("images/chavhouse.png"); /* Set the background image */
+      background-size: cover; /* Make sure the image covers the entire banner */
+      background-position: center; /* Center the image */
+      height: 67vh; /* Set the height of the banner */
+    
+    }
+  
+    .bannerh2 {
+      margin-bottom: 3vh;
+    }
+  
+    
+  
+    .button-group {
+      
+  
+      display: flex;
+      flex-direction: column; /* Change the direction to row */
+      justify-content: center; /* Align the items to the right */
+      align-items: center;
+    }
+    
+    .button-group .top-button{
+   
+    }
+    
+    
+  
+  
+    .top-button {
+      
+      margin: 10px 0;
+      padding: 0.5em 1em;
+      background-color: #5F8575;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 30px;
+      border-radius: 5px;
+    }
+  
+    .top-button:hover {
+      
+      background-color: #7ba795;
+      color: white;
+     
+    }
+  
+    .section2-container {
+      flex-direction: column;
+      height: auto;
+      border-radius: 0;
+      padding: 20px;
+      border: none;
+    }
+    
+    .left-section2 {
+      margin: 0;
+    }
+    
+    .right-section2 {
+      margin-right: 0;
+      text-align: left;
+      padding-right: 0;
+    }
+  
+    .section3-container {
+      flex-direction: column;
+      height: auto;
+      border-radius: 0;
+      padding: 20px;
+      border: none;
+    }
+    
+    .left-section3 {
+      margin: 0;
+      text-align: center;
+      padding-left: 0;
+    }
+    
+    .right-section3 {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  
+    .img3 {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .section4-container {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 20px;
+      padding: 30px;
+      height: 60vh;
+      border: 1px solid #b36a5e;
+    }
+    
+    .left-section4 {
+      flex-basis: 50%;
+      margin: auto;
+    }
+    
+    .right-section4 {
+      flex-basis: 50%;
+      margin-right: 5%;
+      margin: auto;
+      color: #b36a5e;
+      text-align: right;
+      padding-right: 5%;
+    }
+  
+    .section5-container {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 20px;
+      padding: 30px;
+      border: 1px solid #b36a5e;
+    
+    }
+    
+    .left-section5 {
+      flex-basis: 50%;
+      margin: auto;
+    }
+    
+    .right-section5 {
+      flex-basis: 50%;
+      margin-right: 5%;
+      margin: auto;
+      color: #b36a5e;
+      text-align: center;
+    }
+  
+    .section6-container {
+      text-align: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      padding: 40px;
+      
+      
+    }
+    
+    .traveldiv1 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10vh;
+    }
+    
+    .left-section6 {
+      flex-basis: 50%;
+      margin: auto;
+      margin-right: 5%;
+      text-align: center;
+    }
+    
+    .right-section6 {
+      flex-basis: 50%;
+      margin: auto;
+      color: #b36a5e;
+      text-align: center;
+    }
+  
+    .img6 {
+      border-radius: 20px;
+      width: 100%;
+    }
+  
+    .traveldiv2 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10vh;
+    }
+  
+    .left-section7 {
+      flex-basis: 50%;
+      margin: auto;
+      margin-right: 5%;
+    }
+    
+    .right-section7 {
+      flex-basis: 50%;
+      margin-right: 5%;
+      margin: auto;
+      color: #b36a5e;
+      text-align: center;
+    }
+  
+  .img7 {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .traveldiv3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+  }
+  
+  .left-section-travel-3{
+    flex-basis: 50%;
+    margin: auto;
+    margin-right: 5%;
+    text-align: center;
+  }
+  
+  .right-section-travel-3{
+    flex-basis: 50%;
+    margin: auto;
+    color: #b36a5e;
+    text-align: center;
+  }
+  
+  .traveldiv4 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+  }
+  
+  .left-section-travel-4{
+    flex-basis: 50%;
+    margin: auto;
+    margin-right: 5%;
+    text-align: center;
+  }
+  
+  .right-section-travel-4{
+    flex-basis: 50%;
+    margin: auto;
+    color: #b36a5e;
+    text-align: center;
+  }
+  
+  .traveldiv5 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+  }
+  
+  .left-section-travel-5{
+    flex-basis: 50%;
+    margin: auto;
+    margin-right: 5%;
+    text-align: center;
+  }
+  
+  .right-section-travel-5{
+    flex-basis: 50%;
+    margin: auto;
+    color: #b36a5e;
+    text-align: center;
+  }
+  
+  .traveldiv6 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+  }
+  
+  .left-section-travel-6{
+    flex-basis: 50%;
+    margin: auto;
+    margin-right: 5%;
+    text-align: center;
+  }
+  
+  .right-section-travel-6{
+    flex-basis: 50%;
+    margin: auto;
+    color: #b36a5e;
+    text-align: center;
+  }
+  
+  
+    .icon-container {
+      height: auto;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+    }
+    
+    .icon-container i {
+      font-size: 2em;
+    }
+  
+    body {
+      font-family: monospace;
+      color: #b36a5e;
+    }
+  
+    .fa-solid {
+      color: #b36a5e;
+      size: 
+    }
+  
+    .img1 {
+      max-width: 50%;
+      height: auto;
+    }
+  
+    .img2 {
+      max-width: 65%;
+      height: auto;
+    }
+  
+   
+  
+    .img4 {
+      max-width: 65%;
+      height: auto;
+      float: left;
+    }
+    .img5 {
+      max-width: 70%;
+      height: auto;
+    }
+  
+    h1 {
+      font-size: 60px;
+    }
+      
+    h2 {
+      font-size: 40px;
+    }
+  
+    p {
+      font-size: 35px;
+    }
   }
