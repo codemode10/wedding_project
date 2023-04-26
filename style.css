@@ -480,26 +480,28 @@
     .section2-container {
       flex-direction: column;
       height: auto;
-      border-radius: 0;
+      border-radius: 30px;
       padding: 20px;
       border: none;
     }
     
     .left-section2 {
       margin: 0;
+      text-align: center;
+      
     }
     
     .right-section2 {
       margin-right: 0;
-      text-align: left;
+      text-align: center;
       padding-right: 0;
     }
   
     .section3-container {
       flex-direction: column;
       height: auto;
-      border-radius: 0;
-      padding: 20px;
+      border-radius: 30px;
+      padding: 40px;
       border: none;
     }
     
@@ -511,18 +513,19 @@
     
     .right-section3 {
       margin: 0;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      text-align: center;
     }
   
     .img3 {
-      max-width: 100%;
+      max-width: 60%;
       height: auto;
+      margin-right: 0px;
     }
   
     .section4-container {
-      display: flex;
-      justify-content: space-between;
-      border-radius: 20px;
+      flex-direction: column;
+      border-radius: 30px;
       padding: 30px;
       height: 60vh;
       border: 1px solid #b36a5e;
@@ -545,7 +548,7 @@
     .section5-container {
       display: flex;
       justify-content: space-between;
-      border-radius: 20px;
+      border-radius: 30px;
       padding: 30px;
       border: 1px solid #b36a5e;
     
@@ -557,11 +560,7 @@
     }
     
     .right-section5 {
-      flex-basis: 50%;
-      margin-right: 5%;
-      margin: auto;
-      color: #b36a5e;
-      text-align: center;
+      display: none;
     }
   
     .section6-container {
@@ -574,7 +573,7 @@
     }
     
     .traveldiv1 {
-      display: flex;
+      flex-direction: column;
       justify-content: space-between;
       margin-top: 10vh;
     }
@@ -599,7 +598,7 @@
     }
   
     .traveldiv2 {
-      display: flex;
+      flex-direction: column;
       justify-content: space-between;
       margin-top: 10vh;
     }
@@ -624,7 +623,7 @@
   }
   
   .traveldiv3 {
-    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 10vh;
   }
@@ -644,8 +643,7 @@
   }
   
   .traveldiv4 {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 10vh;
   }
   
@@ -664,8 +662,7 @@
   }
   
   .traveldiv5 {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 10vh;
   }
   
@@ -684,8 +681,7 @@
   }
   
   .traveldiv6 {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 10vh;
   }
   
@@ -713,7 +709,7 @@
     }
     
     .icon-container i {
-      font-size: 2em;
+      font-size: 4em;
     }
   
     body {
@@ -734,6 +730,7 @@
     .img2 {
       max-width: 65%;
       height: auto;
+      margin-left: 0px;
     }
   
    
