@@ -14,7 +14,12 @@
     background-position: center; /* Center the image */
     height: 67vh; /* Set the height of the banner */
     position: relative;
+    
   }
+
+.banner-h1 {
+  margin-top: 50px;
+}
 
   .bannerh2 {
     margin-bottom: 5vh;
@@ -71,6 +76,7 @@
     background-color: #b36a5e;
     color: white;
     margin-bottom: 10vh;
+    box-shadow: 7px 7px #ff9888;
   }
   
   .left-section2 {
@@ -97,6 +103,7 @@
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
     margin-bottom: 10vh;
+    box-shadow: 7px 7px #ff9888;
   }
   
   .left-section3 {
@@ -118,10 +125,11 @@
     justify-content: space-between;
     border-radius: 20px;
     padding: 30px;
-    height: 60vh;
+    height: 50vh;
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
     margin-bottom: 10vh;
+    box-shadow: 7px 7px #ff9888;
   }
   
   .left-section4 {
@@ -146,11 +154,13 @@
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
     margin-bottom: 10vh;
+    box-shadow: 7px 7px #ff9888;
   }
   
   .left-section5 {
     flex-basis: 50%;
-    margin: auto;
+    margin-left: 60px
+
   }
   
   .right-section5 {
@@ -164,12 +174,13 @@
   .section6-container {
     text-align: center;
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 70px;
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
     color: white;
     margin-bottom: 10vh;
+    box-shadow: 7px 7px #ff9888;
     
   }
   
@@ -336,18 +347,21 @@
   .img2 {
     max-width: 65%;
     height: auto;
+    margin-left: 50px;
   }
 
   .img3 {
-    max-width: 70%;
+    max-width: 57%;
     height: auto;
     float: right;
+    margin-right: 25px;
   }
 
   .img4 {
-    max-width: 65%;
+    max-width: 50%;
     height: auto;
     float: left;
+    margin-left: 40px;
   }
   .img5 {
     max-width: 70%;
@@ -361,15 +375,18 @@
   .h1-red {
     font-size: 32px;
     color: white;
+    
   }
     
   h2 {
     font-size: 20px;
+    
   }
 
   p {
     font-size: 16px;
     color: #b36a5e;
+    
   }
 
   .p-red {
