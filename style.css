@@ -498,7 +498,9 @@
     }
   
     .section3-container {
-      flex-direction: column;
+      display: flex;
+      flex-direction: column-reverse;
+      
       height: auto;
       border-radius: 30px;
       padding: 40px;
@@ -512,9 +514,9 @@
     }
     
     .right-section3 {
-      margin: 0;
-      margin-bottom: 30px;
-      text-align: center;
+      display: flex;
+  justify-content: center;
+  align-items: center;
     }
   
     .img3 {
