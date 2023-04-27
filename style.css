@@ -65,6 +65,11 @@
    
   }
 
+  .custom-rsvp {
+    padding: 1.5vh 2.5vw;
+    display: inline-block;
+    
+  }
   
   .section2-container {
     display: flex;
@@ -75,7 +80,7 @@
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
     color: white;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     box-shadow: 7px 7px #ff9888;
   }
   
@@ -102,7 +107,7 @@
     height: 60vh;
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     box-shadow: 7px 7px #ff9888;
   }
   
@@ -128,7 +133,7 @@
     height: 50vh;
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     box-shadow: 7px 7px #ff9888;
   }
   
@@ -153,22 +158,29 @@
     padding: 30px;
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     box-shadow: 7px 7px #ff9888;
   }
   
   .left-section5 {
     flex-basis: 50%;
-    margin-left: 60px
-
-  }
-  
-  .right-section5 {
+    order: 2;
     flex-basis: 50%;
     margin-right: 5%;
     margin: auto;
     color: #b36a5e;
     text-align: center;
+      .p-red {
+        margin-bottom: 5vh;
+      }
+  }
+  
+  .right-section5 {
+    flex-basis: 50%;
+    margin: auto;
+    color: #b36a5e;
+    text-align: center;
+    order: 1;
   }
 
   .section6-container {
@@ -179,7 +191,7 @@
     border: 2px solid #b36a5e;
     background-color: #b36a5e;
     color: white;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     box-shadow: 7px 7px #ff9888;
     
   }
@@ -363,25 +375,26 @@
   .img5 {
     max-width: 70%;
     height: auto;
+    margin-left: 3vw;
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .h1-red {
-    font-size: 32px;
+    font-size: 2rem;
     color: white;
     
   }
     
   h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
     
   }
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #b36a5e;
     
   }
@@ -399,7 +412,7 @@
     text-align: center; /* Center text */
     text-decoration: none; /* Remove underline */
     display: inline-block; /* Set as block element */
-    font-size: 16px; /* Set font size */
+    font-size: 1rem; /* Set font size */
     margin: 4px 2px; /* Add some margin */
     cursor: pointer; /* Add a pointer cursor on hover */
     box-shadow: 3px 3px;
@@ -463,24 +476,22 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 2rem;
       border-radius: 5px;
     }
   
     .top-button:hover {
-      
       background-color: #7ba795;
       color: white;
-     
     }
   
     .section2-container {
       flex-direction: column;
       height: auto;
       border-radius: 30px;
-      padding: 20px;
+      padding: 70px;
       border: none;
-      box-shadow: 10px 10px #ff9888;
+      box-shadow: 15px 15px #ff9888;
     }
     
     .left-section2 {
@@ -500,9 +511,9 @@
       flex-direction: column-reverse;
       height: auto;
       border-radius: 30px;
-      padding: 50px;
+      padding: 70px;
       border: none;
-      box-shadow: 10px 10px #ff9888;
+      box-shadow: 15px 15px #ff9888;
     }
     
     .left-section3 {
@@ -527,9 +538,10 @@
       display: flex;
       flex-direction: column;
       border-radius: 30px;
-      padding: 30px;
-      height: 50vh;
+      padding: 70px;
       border: 1px solid #b36a5e;
+      height: auto;
+      box-shadow: 15px 15px #ff9888;
     }
     
     .left-section4 {
@@ -548,30 +560,32 @@
   
     .section5-container {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       border-radius: 30px;
-      padding: 30px;
+      padding: 70px;
+      padding-bottom: 5vh;
       border: 1px solid #b36a5e;
+      box-shadow: 15px 15px #ff9888;
     
     }
     
     .left-section5 {
-      flex-basis: 50%;
-      margin: auto;
+      .p-red {
+        margin-bottom: 15vh;
+      }
+     
     }
-    
+
     .right-section5 {
-      display: none;
+      
     }
   
     .section6-container {
       text-align: center;
       justify-content: space-between;
       border-radius: 20px;
-      padding: 40px;
-      
-      
-      
+      padding: 70px;
+      box-shadow: 15px 15px #ff9888;
     }
     
     .traveldiv1 {
@@ -583,7 +597,6 @@
     .left-section6 {
       flex-basis: 50%;
       margin: auto;
-      
       text-align: center;
     }
     
@@ -597,6 +610,8 @@
     .img6 {
       border-radius: 20px;
       width: 100%;
+      object-fit: fill;
+      box-shadow: 7px 7px;
     }
   
     .traveldiv2 {
@@ -691,6 +706,7 @@
     flex-basis: 50%;
     margin: auto;
     text-align: center;
+    margin-bottom: 4vh;
   }
   
   .right-section-travel-6{
@@ -698,6 +714,15 @@
     margin: auto;
     color: #b36a5e;
     text-align: center;
+  }
+
+  .google-form {
+    font-size: 2rem;
+  }
+
+  .custom-rsvp {
+    padding: 1vh 5vw;
+    
   }
   
   
@@ -745,20 +770,48 @@
     .img5 {
       max-width: 70%;
       height: auto;
+      margin-left: 0;
     }
   
     h1 {
-      font-size: 60px;
+      font-size: 4rem;
     }
     .h1-red {
-      font-size: 50px;
+      font-size: 4rem;
     }
       
     h2 {
-      font-size: 40px;
+      font-size: 2rem;
     }
   
     p {
-      font-size: 35px;
+      font-size: 1rem;
+    }
+
+    .p-red {
+      font-size: 2rem;
+    }
+
+    .mapbutton {
+      border-radius: 10px;
+      background-color: #73a892; /* Set the background color */
+      border: none; /* Remove border */
+      color: white; /* Set text color to white */
+      padding: 15px 25px; /* Set padding */
+      text-align: center; /* Center text */
+      text-decoration: none; /* Remove underline */
+      display: inline-block; /* Set as block element */
+      font-size: 2rem; /* Set font size */
+      margin: 4px 2px; /* Add some margin */
+      cursor: pointer; /* Add a pointer cursor on hover */
+      box-shadow: 10px 10px;
+    }
+  
+    .mapbutton:hover {
+      background-color: #5F8575; /* Set the background color */
+      box-shadow: 15px 15px;
+     
     }
   }
+
+  
