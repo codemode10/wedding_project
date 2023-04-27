@@ -571,7 +571,7 @@
     
     .left-section5 {
       .p-red {
-        margin-bottom: 15vh;
+        margin-bottom: 3vh;
       }
      
     }
@@ -631,7 +631,6 @@
       flex-basis: 50%;
       margin-right: 5%;
       margin: auto;
-      color: #b36a5e;
       text-align: center;
     }
   
@@ -674,7 +673,6 @@
   .right-section-travel-4{
     flex-basis: 50%;
     margin: auto;
-    color: #b36a5e;
     text-align: center;
   }
   
@@ -706,13 +704,12 @@
     flex-basis: 50%;
     margin: auto;
     text-align: center;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
   }
   
   .right-section-travel-6{
     flex-basis: 50%;
     margin: auto;
-    color: #b36a5e;
     text-align: center;
   }
 
