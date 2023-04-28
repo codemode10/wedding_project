@@ -237,7 +237,8 @@ html {
     margin-right: 5%;
     margin: auto;
     color: #b36a5e;
-    text-align: center;
+    text-align: right;
+    padding-right: 5%;
       .p-red {
         margin-bottom: 5vh;
       }
@@ -247,7 +248,8 @@ html {
     flex-basis: 50%;
     margin: auto;
     color: #b36a5e;
-    text-align: center;
+    text-align: left;
+    margin-left: 3%;
     order: 1;
   }
 
@@ -300,6 +302,7 @@ html {
     flex-basis: 50%;
     margin: auto;
     margin-right: 5%;
+    
   }
   
   .right-section7 {
@@ -439,12 +442,12 @@ html {
     max-width: 50%;
     height: auto;
     float: left;
-    margin-left: 40px;
+    margin-left: 50px;
   }
   .img5 {
-    max-width: 70%;
+    max-width: 60%;
     height: auto;
-    margin-left: 3vw;
+    
   }
 
   h1 {
@@ -635,10 +638,13 @@ html {
       padding-bottom: 5vh;
       border: 1px solid #b36a5e;
       box-shadow: 15px 15px #ff9888;
+      text-align: center;
     
     }
     
     .left-section5 {
+      text-align: center;
+      padding-right: 0;
       .p-red {
         margin-bottom: 3vh;
       }
@@ -646,7 +652,7 @@ html {
     }
 
     .right-section5 {
-      
+      text-align: center;
     }
   
     .section6-container {
@@ -830,7 +836,7 @@ html {
     .img4 {
       max-width: 65%;
       height: auto;
-      float: left;
+      float: center;
       margin: 0;
     }
     .img5 {
