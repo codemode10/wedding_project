@@ -33,45 +33,80 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+var cloudinaryInstance = cloudinary.Cloudinary.new({ cloud_name: 'degbra6ra' });
 
-  var cloudinaryInstance = cloudinary.Cloudinary.new({ cloud_name: 'degbra6ra' });
-
-  async function uploadImage() {
-    const input = document.getElementById('file-input');
-    const files = input.files;
-  
-    if (!files || files.length === 0) {
-      alert('Please select at least one image file to upload');
-      return;
-    }
-  
+function uploadImages(files, onProgress) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
     const formData = new FormData();
-  
+
     for (let i = 0; i < files.length; i++) {
       formData.append('file', files[i]);
     }
-  
-    formData.append('upload_preset','z3hrqghk'); // Replace 'YOUR_UPLOAD_PRESET' with your actual upload preset
-  
-    try {
-      const response = await fetch(`https://api.cloudinary.com/v1_1/${cloudinaryInstance.config().cloud_name}/image/upload`, {
-        method: 'POST',
-        body: formData,
-      });
-  
-      if (response.ok) {
-        const data = await response.json();
-        console.log('Image uploaded successfully:', data);
-        alert('Images uploaded successfully!');
-        // Use 'data.url' to display the uploaded image or store it in your database
-      } else {
-        throw new Error('Failed to upload image');
+
+    formData.append('upload_preset', 'z3hrqghk');
+
+    xhr.open('POST', `https://api.cloudinary.com/v1_1/${cloudinaryInstance.config().cloud_name}/image/upload`, true);
+
+    xhr.upload.onprogress = (event) => {
+      if (onProgress) {
+        onProgress(event.loaded, event.total);
       }
-    } catch (error) {
-      console.error('Error uploading image:', error);
-      alert('Error uploading images');
-    }
+    };
+
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        const data = JSON.parse(xhr.responseText);
+        console.log('Image uploaded successfully:', data);
+        resolve(data);
+      } else {
+        console.error('Error uploading image:', xhr.statusText);
+        reject(new Error('Failed to upload image'));
+      }
+    };
+
+    xhr.onerror = () => {
+      console.error('Error uploading image:', xhr.statusText);
+      reject(new Error('Failed to upload image'));
+    };
+
+    xhr.send(formData);
+  });
+}
+
+function uploadImage() {
+  const input = document.getElementById('file-input');
+  const files = input.files;
+  const fileMessage = document.getElementById('file-message');
+
+  if (!files || files.length === 0) {
+    alert('Please select at least one image file to upload');
+    return;
   }
+
+  // Inform the user about the number of files being uploaded
+  fileMessage.textContent = `Uploading ${files.length} image(s)...`;
+
+  // Call the uploadImages function and handle success and error cases
+  uploadImages(files, (loaded, total) => {
+    console.log(`Uploaded ${loaded} of ${total} bytes`);
+  })
+    .then(() => {
+      alert('Images uploaded successfully!');
+      // Clear the message after the upload process is complete
+      fileMessage.textContent = '';
+    })
+    .catch(() => {
+      alert('Error uploading images');
+      // Clear the message after the upload process is complete
+      fileMessage.textContent = '';
+    });
+}
+
+
+
+
+
   
   
 

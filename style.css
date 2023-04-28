@@ -1,3 +1,24 @@
+.choose-files {
+  display: none;
+}
+
+
+.upload-div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.input-wrapper {
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
 
 .line-up {
   opacity: 0;
@@ -38,6 +59,11 @@
 .line-up:nth-child(5) {
   animation-delay: 7.9s;
 }
+
+.line-up:nth-child(6) {
+  animation-delay: 8s;
+}
+
 
 
 @keyframes float-up {
@@ -125,6 +151,9 @@ html {
     font-size: 16px;
     border-radius: 5px;
     box-shadow: 3px 3px;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
   }
 
   .top-button:hover {
@@ -450,6 +479,13 @@ html {
     
   }
 
+  .img10 {
+    max-width: 57%;
+    height: auto;
+    float: right;
+    margin-right: 40px;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -549,7 +585,8 @@ html {
       font-weight: bold;
       font-size: 2rem;
       border-radius: 5px;
-      box-shadow: 7px 7px
+      box-shadow: 7px 7px;
+      font-family: monospace;
     }
   
     .top-button:hover {
@@ -904,8 +941,17 @@ html {
     #myBtn:hover {
       background-color: #5F8575;
     }
+    .upload-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-
+    .img10 {
+      max-width: 57%;
+      height: auto;
+      margin-right: 0;
+    }
   }
 
   
