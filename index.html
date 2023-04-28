@@ -10,8 +10,8 @@
     <div class="page-container">
         
         <div class="section1-container">
-            <h1 class="banner-h1">Bienvenue au mariage de Lloyd et Mathilde</h1>
-            <h2 class="bannerh2">Saint-Cannat, Provence, France </h2>
+            <h1 class="banner-h1" id="typing-h1"></h1>
+            <h2 class="bannerh2" id="typing-h2"></h2>
             <div class="button-group">
                 <a href="#wedding-day" class="top-button">Wedding Day</a>
                 <a href="#day-after" class="top-button">Day after</a>
@@ -163,21 +163,6 @@
     
 
     
-    <script>
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-            document.getElementById("myBtn").style.display = "block";
-          } else {
-            document.getElementById("myBtn").style.display = "none";
-          }
-        }
-        
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

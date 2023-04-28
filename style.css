@@ -24,7 +24,7 @@ html {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #5F8575;
 }
 
 .page-container {
@@ -497,7 +497,7 @@ html {
     .top-button {
       margin: 10px 0;
       padding: 0.5em 1em;
-      background-color: #5F8575;
+      background-color: #7ba795;#5F8575;
       color: white;
       text-decoration: none;
       font-weight: bold;
@@ -507,7 +507,7 @@ html {
     }
   
     .top-button:hover {
-      background-color: #7ba795;
+      background-color: #5F8575;
       color: white;
     }
   
@@ -841,7 +841,7 @@ html {
       bottom: 20px;
       right: 30px;
       z-index: 99;
-      font-size: 2rem;
+      font-size: 2.5rem;
       border: none;
       outline: none;
       background-color: #73a892;
@@ -849,11 +849,14 @@ html {
       cursor: pointer;
       padding: 20px 30px;
       border-radius: 10px;
+      box-shadow: 7px 7px
     }
     
     #myBtn:hover {
-      background-color: #555;
+      background-color: #5F8575;
     }
+
+
   }
 
   
