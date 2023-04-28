@@ -5,6 +5,7 @@
     <meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/b42a696e69.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div class="page-container">
@@ -13,14 +14,14 @@
             <h1 class="banner-h1" id="typing-h1"></h1>
             <h2 class="bannerh2" id="typing-h2"></h2>
             <div class="button-group">
-                <a href="#wedding-day" class="top-button">Wedding Day</a>
-                <a href="#day-after" class="top-button">Day after</a>
-                <a href="#RSVP" class="top-button">RSVP</a>
-                <a href="#travel-provence" class="top-button">Travel Provence</a>
-                <a href="#gifts" class="top-button">Gifts</a>
-              
+              <a href="#wedding-day" class="top-button line-up">Wedding Day</a>
+              <a href="#day-after" class="top-button line-up">Day after</a>
+              <a href="#RSVP" class="top-button line-up">RSVP</a>
+              <a href="#travel-provence" class="top-button line-up">Travel Provence</a>
+              <a href="#gifts" class="top-button line-up">Gifts</a>
             </div>
-        </div>
+          </div>
+          
        
         <div class="icon-container">
             <i class="fa-solid fa-circle-down fa-beat"></i>
@@ -141,9 +142,22 @@
                 </div>
             </div>
         </div>
-       
+        <div class="section3-container" id="day-after">
+            <div class="left-section3">
+                <h1 class="h1-red">Image upload </h1>
+                <p class="p-red">PLease upload some of your best pics over the weekend here :)</p>
+                <div class="upload-div">
+                    <input type="file" id="file-input" accept="image/*" multiple>
+                    <button onclick="uploadImage()">Upload</button>
+                </div>
+            </div>
+            <div class="right-section3">
+              
+                <img class="img3" src="images/2.svg" alt="">
+            </div>
+        </div>
         <div class="section4-container">
-            <div class="left-section4">
+            <div class="left-section7">
                 <img class="img4" src="images/3.svg" alt="">
             </div>
             <div class="right-section4" id="gifts">
@@ -151,6 +165,9 @@
                 <p class="p-red">If you would like to contribute to our wedding registry you can do so at the following link. If you have travelled via aeroplane to come to our wedding you do not need to get us a gift!</p>
             </div>
         </div>
+
+        
+       
 
         
         <h2>About French Weddings</h2>
@@ -162,7 +179,9 @@
     </div>
     
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.11.4/cloudinary-core-shrinkwrap.min.js"></script>
+
     <script src="script.js"></script>
+
 </body>
 </html>

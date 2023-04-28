@@ -1,3 +1,45 @@
+
+.line-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: lineUpEffect;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lineUpEffect {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.line-up:nth-child(1) {
+  animation-delay: 7.5s;
+}
+
+.line-up:nth-child(2) {
+  animation-delay: 7.6s;
+}
+
+.line-up:nth-child(3) {
+  animation-delay: 7.7s;
+}
+
+.line-up:nth-child(4) {
+  animation-delay: 7.8s;
+}
+
+.line-up:nth-child(5) {
+  animation-delay: 7.9s;
+}
+
+
 @keyframes float-up {
   from { transform: translateY(0); }
   to { transform: translateY(-10px); }
@@ -350,6 +392,7 @@ html {
   margin: auto;
   text-align: center;
 }
+
 
 
   .icon-container {
