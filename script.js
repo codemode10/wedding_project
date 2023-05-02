@@ -29,7 +29,7 @@ const typeText = (elementId, text, speed, callback) => {
 
 document.addEventListener('DOMContentLoaded', () => {
   typeText('typing-h1', 'Bienvenue au mariage de Lloyd et Mathilde', 100, () => {
-    typeText('typing-h2', 'Saint-Cannat, Provence, France', 100);
+    typeText('typing-h2', 'À Saint-Cannat, Provence, France', 100);
   });
 });
 
