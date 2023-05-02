@@ -84,21 +84,21 @@ function uploadImage() {
     return;
   }
 
-  // Inform the user about the number of files being uploaded
+  
   fileMessage.textContent = `Uploading ${files.length} image(s)...`;
 
-  // Call the uploadImages function and handle success and error cases
+ 
   uploadImages(files, (loaded, total) => {
     console.log(`Uploaded ${loaded} of ${total} bytes`);
   })
     .then(() => {
       alert('Images uploaded successfully!');
-      // Clear the message after the upload process is complete
+      
       fileMessage.textContent = '';
     })
     .catch(() => {
       alert('Error uploading images');
-      // Clear the message after the upload process is complete
+      
       fileMessage.textContent = '';
     });
 }
