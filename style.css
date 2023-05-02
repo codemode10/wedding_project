@@ -1,3 +1,18 @@
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-p {
+margin-bottom: 4vh;
+}
+
+.landing {
+  text-align: center;
+}
+
 .choose-files {
   display: none;
 }
@@ -144,7 +159,7 @@ margin-top: 50px;
 .top-button:hover {
   background-color: #7ba795;
   color: white;
-  box-shadow: 5px 5px;
+  box-shadow: 6px 6px;
 }
 
 .custom-rsvp {
