@@ -27,10 +27,13 @@ const typeText = (elementId, text, speed, callback) => {
   typingEffect();
 };
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
-  typeText('typing-h1', 'Bienvenue au mariage de Lloyd et Mathilde', 100, () => {
-    typeText('typing-h2', 'À Saint-Cannat, Provence, France', 100);
+  typeText('typing-h1', 'Bienvenue au mariage de Mathilde & Lloyd', 80, () => {
+    typeText('typing-h2', 'À Saint-Cannat, Provence, France', 80)
   });
+  
 });
 
 var cloudinaryInstance = cloudinary.Cloudinary.new({ cloud_name: 'degbra6ra' });

@@ -4,16 +4,32 @@
 	<title>My Website - Home</title>
     <meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index-css.css">
     <script src="https://kit.fontawesome.com/b42a696e69.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="landing-container">
-        <div class="landing">
-            <h1>You are almost in</h1>
-            <p class="landing-p">But first, Please select your language:</p>
-            <a class="mapbutton" href="english.html" class="language-btn">English</a>
-            <a class="mapbutton" href="french.html" class="language-btn">Français</a>
+      <div class="landing">
+        <div class="carousel">
+            <img class="landing-image slide-in" src="images/landing-image1.jpeg" alt="">
+            <img class="landing-image slide-in" src="images/landing-image3.jpeg" alt="">
+            <img class="landing-image slide-in" src="images/landing-image4.jpeg" alt="">
+            <img class="landing-image slide-in" src="images/landing-image5.jpeg" alt="">
+            <img class="landing-image slide-in" src="images/landing-image6.jpeg" alt="">
+            <img class="landing-image slide-in" src="images/landing-image2.jpeg" alt="">
         </div>
+        <div class="text-and-buttons">
+          <h2 class="landingcss" id="title"></h2>
+          <div class="buttons">
+            <a class="mapbutton language-btn" href="english.html">English</a>
+            <a class="mapbutton language-btn" href="french.html">Français</a>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="landingjs.js"></script>
+  </body>
+
 </html>
+

@@ -1,3 +1,4 @@
+
 .landing-container {
   display: flex;
   justify-content: center;
@@ -246,6 +247,32 @@ margin-top: 50px;
   color: #b36a5e;
   text-align: right;
   padding-right: 5%;
+}
+
+.section10-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 30px;
+  height: 60vh;
+  border: 2px solid #b36a5e;
+  background-color: #b36a5e;
+  margin-bottom: 5vh;
+  box-shadow: 7px 7px #ff9888;
+}
+
+.left-section10 {
+  flex-basis: 50%;
+  margin-right: 5%;
+  margin: auto;
+  color: #b36a5e;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.right-section10 {
+  flex-basis: 50%;
+  margin: auto;
 }
 
 .section5-container {
