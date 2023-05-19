@@ -25,11 +25,27 @@
     height: 120px;  /* You may need to adjust this depending on your text size and button size */
   }
   
+  .language-btn {
+    display: none;
+}
 
   
-  .slide-in {
-    transform: translateX(0);
-  }
+@keyframes floatIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.float-in {
+    animation: floatIn 1s ease-out;
+}
+
+
   
   
   

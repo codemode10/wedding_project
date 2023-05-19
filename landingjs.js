@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const titleElement = document.getElementById('title');
     const titleText = "Choose your language";
     const typingSpeed = 150;  // you can adjust this speed to your liking
+    const buttons = document.querySelectorAll('.language-btn');  // Get all the buttons
 
     let index = 0;
     const typeTextInterval = setInterval(() => {
@@ -36,9 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
         index++;
         if (index >= titleText.length) {
             clearInterval(typeTextInterval);
+
+            // Show the buttons after the typing effect is done
+            buttons.forEach(button => {
+                button.style.display = 'inline-block';  // or 'inline', or whatever was the original display property
+                button.classList.add('float-in');
+            });
         }
     }, typingSpeed);
 });
+
 
 
   
