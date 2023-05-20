@@ -45,6 +45,43 @@
     animation: floatIn 1s ease-out;
 }
 
+@media only screen and (max-width: 1000px) {
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+    .landing-container {
+        text-align: center; 
+    }
+  
+    .landing-image {
+      height: 50vh;
+      width: auto;
+      border-radius: 20px;
+    }
+  
+    .text-and-buttons {
+      height: auto;
+    }
+  
+    .language-btn {
+      display: block;
+    }
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 
   
   

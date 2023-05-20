@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // Show the next image
       carouselImages[currentIndex].style.display = 'block';
-    }, 2500);  // The number here represents the time delay between image changes, in milliseconds. Adjust as desired.
+    }, 1575);  // The number here represents the time delay between image changes, in milliseconds. Adjust as desired.
   });
   
 
