@@ -47,14 +47,14 @@
 
 @media only screen and (max-width: 1000px) {
     body {
-        margin: 0;
+        margin-top: 10vh !important;
         height: 100vh;
         display: flex;
-        align-items: center;
         justify-content: center;
       }
     
     .landing-container {
+        margin-top: 10vh;
         text-align: center; 
     }
   
@@ -69,7 +69,7 @@
     }
   
     .language-btn {
-      display: block;
+      display: none;
     }
   }
 
