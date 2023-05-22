@@ -1,14 +1,56 @@
-.animated {
-  opacity: 0;
-  transform: translateY(75px);
-  transition: all 1s;
+body {
+  font-family: monospace;
+  color: ;
 }
 
-.animated.visible {
+h1 {
+  font-size: 2rem;
+  color: white;
+  font-family: monospace; /* replace with the color you want */
+}
+
+h2 {
+  font-size: 2rem;
+  color: white;; /* replace with the color you want */
+}
+
+.h1-bottom {
+color: #b36a5e;
+text-align: center;
+}
+
+.p-bottom {
+  color: #b36a5e;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: white;; /* replace with the color you want */
+}
+
+
+@keyframes floatUp {
+  0% {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.scroll-animate.animate {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .landing-container {
   display: flex;
@@ -132,11 +174,15 @@ html {
 }
 
 .banner-h1 {
+  font-size: 40px;
 margin-top: 50px;
+color: #b36a5e;
 }
 
-.bannerh2 {
+.banner-h2 {
   margin-bottom: 5vh;
+  color: #b36a5e;
+  font-size: 20px;
 }
 
 .button-group {
@@ -355,7 +401,7 @@ margin-top: 50px;
 .img6 {
   border-radius: 20px;
   width: 100%;
-  box-shadow: 3px 3px;
+  box-shadow: 3px 3px white;
 }
 
 .traveldiv2 {
@@ -381,7 +427,7 @@ margin-top: 50px;
 .img7 {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 3px 3px;
+  box-shadow: 3px 3px white;
 }
 
 .traveldiv3 {
@@ -543,6 +589,40 @@ box-shadow: 5px 5px;
 
 
 @media screen and (max-width: 1000px) {
+
+  .banner-h1 {
+    font-size: 60px;
+    margin-top: 40px;
+    color: #b36a5e;
+    }
+    
+    .banner-h2 {
+      font-size: 40px;
+      margin-top: 50px;
+      color: #b36a5e;
+      }
+
+  h1 {
+    font-size: 50px;
+    color: white;
+    font-family: monospace; /* replace with the color you want */
+  }
+
+  h2 {
+    font-size: 40px;
+    color: white;; /* replace with the color you want */
+  }
+  
+  p {
+    font-size: 30px;
+    color: white;; /* replace with the color you want */
+  }
+
+  .p-bottom {
+    color: #b36a5e;
+    font-size: 30px;
+  }
+
 
 .page-container {
   width: 90vw;
