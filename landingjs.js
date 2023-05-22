@@ -37,12 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         index++;
         if (index >= titleText.length) {
             clearInterval(typeTextInterval);
-
-            // Show the buttons after the typing effect is done
-            buttons.forEach(button => {
-                button.style.display = 'inline-block';  // or 'inline', or whatever was the original display property
-                button.classList.add('float-in');
-            });
+            
         }
     }, typingSpeed);
 });

@@ -1,8 +1,53 @@
-.landing-container {
-    
-   height: 98vh;
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    color: #b36a5e;
+  }
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    }
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: floatIn 2s ease-out 3s forwards;
+}
+
+.mapbutton {
+    border-radius: 5px;
+    background-color: #73a892; 
+    border: none; 
+    color: white; 
+    padding: 12px 24px; 
+    text-align: center; 
+    text-decoration: none; 
+    justify-content: center;
+    font-size: 1rem; 
+    cursor: pointer; 
+    box-shadow: 3px 3px;
+    margin-right: 10px;
+    }
 
 .carousel {
     display: flex;
@@ -24,43 +69,35 @@
     justify-content: space-between;
     height: 120px;  /* You may need to adjust this depending on your text size and button size */
   }
-  
-  .language-btn {
-    display: none;
-}
-
-  
-@keyframes floatIn {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.float-in {
-    animation: floatIn 1s ease-out;
-}
 
 @media only screen and (max-width: 1000px) {
     body {
-        margin-top: 10vh !important;
+       margin-top: 8vh;
         height: 100vh;
         display: flex;
         justify-content: center;
       }
+
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+        }
     
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+font-size: 1.2rem;
+
     .landing-container {
-        text-align: center; 
+        text-align: left; 
+
     }
   
     .landing-image {
       height: 50vh;
       width: auto;
-      border-radius: 20px;
+      border-radius: 50px;
     }
   
     .text-and-buttons {
@@ -70,18 +107,30 @@
     .language-btn {
       display: none;
     }
-  }
 
-  body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .mapbutton {
+        border-radius: 15px;
+        background-color: #73a892; 
+        border: none; 
+        color: white; 
+        padding: 20px 30px; 
+        text-align: center; 
+        text-decoration: none; 
+        justify-content: center;
+        cursor: pointer; 
+        box-shadow: 3px 3px;
+        margin-right: 30px;
+        font-size: 2rem;
+        }
+}
 
 
 
-  
-  
+
+
+ 
+
+
+
+
   
