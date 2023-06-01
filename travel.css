@@ -1,6 +1,5 @@
 body {
     font-family: monospace;
-    
   }
   
   h1 {
@@ -71,8 +70,9 @@ body {
 
 .right-section6 {
   flex-basis: 50%;
+   flex-basis: 50%;
+  margin-right: 5%;
   margin: auto;
-  color: #b36a5e;
   text-align: center;
 }
 
@@ -198,24 +198,23 @@ body {
 }
 
 .top-button {
-  margin: 10px 0;
-  padding: 0.5em 1em;
-  background-color: #7ba795;
-  color: #b36a5e;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  border-radius: 5px;
-  box-shadow: 3px 3px;
-  border: none;
-  cursor: pointer;
-  font-family: monospace;
+      margin-top: 20px !important;
+    padding: 0.5em 1em;
+    background-color: #7ba795;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 3px 3px #b36a5e;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
 }
 
 .top-button:hover {
   background-color: #7ba795;
-  color: b36a5e;
-  box-shadow: 8px 8px;
+
+  box-shadow: 8px 8px #b36a5e;
 }
 
 
@@ -239,7 +238,7 @@ body {
 .traveldiv1 {
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 10vh;
+  margin-top: 6vh;
 }
 
 .left-section6 {

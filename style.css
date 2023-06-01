@@ -231,6 +231,7 @@ color: #b36a5e;
   
 }
 
+
 .section2-container {
   display: flex;
   justify-content: space-between;
@@ -294,6 +295,18 @@ color: #b36a5e;
   background-color: #b36a5e;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
+}
+
+.section14-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 50px;
+  border: 2px solid #7ba795;
+  background-color: #7ba795;
+  margin-bottom: 5vh;
+  box-shadow: 7px 7px #ff9888;
+  text-align: center;
 }
 
 .left-section4 {
