@@ -1,31 +1,34 @@
 body {
   font-family: monospace;
-  color: ;
+  
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 35px;
   color: white;
   font-family: monospace; /* replace with the color you want */
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 25px;
   color: white;; /* replace with the color you want */
 }
 
 .h1-bottom {
 color: #b36a5e;
 text-align: center;
+font-size: 35px;
 }
 
 .p-bottom {
   color: #b36a5e;
-  font-size: 1rem;
+  font-size: 17px;
+  text-align: center;
+
 }
 
 p {
-  font-size: 1rem;
+  font-size: 17px;
   color: white;; /* replace with the color you want */
 }
 
@@ -43,7 +46,7 @@ p {
 
 .scroll-animate {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(40px);
   transition: opacity 1s, transform 1s;
 }
 
@@ -214,6 +217,8 @@ color: #b36a5e;
   font-family: monospace;
 }
 
+
+
 .top-button:hover {
   background-color: #7ba795;
   color: white;
@@ -221,7 +226,7 @@ color: #b36a5e;
 }
 
 .custom-rsvp {
-  padding: 1.5vh 2.5vw;
+
   display: inline-block;
   
 }
@@ -234,7 +239,6 @@ color: #b36a5e;
   height: 60vh;
   border: 2px solid #b36a5e;
   background-color: #b36a5e;
-  
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
 }
@@ -346,15 +350,14 @@ color: #b36a5e;
 .left-section5 {
   flex-basis: 50%;
   order: 2;
-  flex-basis: 50%;
   margin-right: 5%;
   margin: auto;
   color: #b36a5e;
   text-align: right;
   padding-right: 5%;
-    .p-red {
-      margin-bottom: 5vh;
-    }
+    
+
+
 }
 
 .right-section5 {
@@ -495,6 +498,15 @@ color: #b36a5e;
   margin-top: 10vh;
 }
 
+.travel-image {
+  border-radius: 20px;
+  width: 80%;
+  object-fit: fill;
+  box-shadow: 7px 7px white;
+  margin-left: 50px;
+  transform: rotate(-7deg);
+}
+
 .left-section-travel-6{
   flex-basis: 50%;
   margin: auto;
@@ -506,6 +518,9 @@ color: #b36a5e;
   flex-basis: 50%;
   margin: auto;
   text-align: center;
+}
+.bottom-container {
+
 }
 
 .icon-container {
@@ -524,7 +539,7 @@ font-size: 2em;
 
 .fa-solid {
 color: #b36a5e;
-size: 
+
 }
 
 .img1 {
@@ -587,7 +602,6 @@ box-shadow: 5px 5px;
 
 }
 
-
 @media screen and (max-width: 1000px) {
 
   .banner-h1 {
@@ -601,22 +615,7 @@ box-shadow: 5px 5px;
       margin-top: 50px;
       color: #b36a5e;
       }
-
-  h1 {
-    font-size: 50px;
-    color: white;
-    font-family: monospace; /* replace with the color you want */
-  }
-
-  h2 {
-    font-size: 40px;
-    color: white;; /* replace with the color you want */
-  }
   
-  p {
-    font-size: 30px;
-    color: white;; /* replace with the color you want */
-  }
 
   .p-bottom {
     color: #b36a5e;
@@ -636,7 +635,6 @@ box-shadow: 5px 5px;
   text-align: center;
   border-radius: 30px;
   padding: 90px;
-  background-image: url("images/chavhouse.png");
   background-size: cover; 
   background-position: left bottom; 
   height: 75vh; 
@@ -646,22 +644,27 @@ box-shadow: 5px 5px;
   margin-bottom: 3vh;
 }
 
+
+
 .button-group {
+  
+  bottom: 2vh;
+  right: 2vh;
   display: flex;
   flex-direction: column; 
-  justify-content: center; 
+  justify-content: flex-end; 
   align-items: center;
 }
 
 .top-button {
   margin: 10px 0;
-  padding: 0.5em 1em;
+  padding: 0.7em 1em;
   background-color: #7ba795;
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 2rem;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 7px 7px;
   font-family: monospace;
 }
@@ -716,7 +719,7 @@ align-items: center;
 .img3 {
   max-width: 60%;
   height: auto;
-  margin-right: 0px;
+  
 }
 
 .section4-container {
@@ -740,7 +743,6 @@ align-items: center;
   margin: auto;
   color: #b36a5e;
   text-align: center;
-  padding-right: 0px;
 }
 
 .section5-container {
@@ -758,9 +760,8 @@ align-items: center;
 .left-section5 {
   text-align: center;
   padding-right: 0;
-  .p-red {
-    margin-bottom: 3vh;
-  }
+  
+
   
 }
 
@@ -804,7 +805,7 @@ align-items: center;
   border-radius: 20px;
   width: 100%;
   object-fit: fill;
-  box-shadow: 7px 7px;
+  box-shadow: 7px 7px white;
 }
 
 .traveldiv2 {
@@ -910,10 +911,6 @@ text-align: center;
 font-size: 2rem;
 }
 
-.custom-rsvp {
-padding: 1vh 5vw;
-
-}
 
 .icon-container {
   height: auto;
@@ -930,7 +927,6 @@ padding: 1vh 5vw;
 
 .fa-solid {
   color: #b36a5e;
-  size: 
 }
 
 .img1 {
@@ -956,9 +952,8 @@ padding: 1vh 5vw;
   margin-left: 0;
 }
 
-
 .mapbutton {
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #73a892; 
   border: none; 
   color: white; 
@@ -983,13 +978,13 @@ padding: 1vh 5vw;
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  font-size: 2rem;
+  font-size: 2.5rem;
   border: none;
   outline: none;
   background-color: #73a892;
-  color: white;
+  color: #ff9888;
   cursor: pointer;
-  padding: 20px 30px;
+  padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 7px 7px
 }
@@ -1008,6 +1003,18 @@ padding: 1vh 5vw;
   height: auto;
   margin-right: 0;
 }
+
+.travel-image {
+  border-radius: 20px;
+  width: 80%;
+  object-fit: fill;
+  box-shadow: 9px 9px white;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  transform: rotate(2deg);
+}
+
 }
 
   

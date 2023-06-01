@@ -1,9 +1,15 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-    document.getElementById("myBtn").style.display = "block";
+  // Check if the viewport width is more than 768px (common breakpoint for desktop screens)
+  if (window.matchMedia("(min-width: 1000px)").matches) {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
   } else {
+    // If it's less (mobile view), keep the button hidden
     document.getElementById("myBtn").style.display = "none";
   }
 }
@@ -12,6 +18,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Rest of your code...
+
 
 const typeText = (elementId, text, speed, callback) => {
   let i = 0;
