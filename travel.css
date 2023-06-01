@@ -2,6 +2,7 @@ body {
     font-family: monospace;
   }
   
+  
   h1 {
     font-size: 35px;
     color: #b36a5e;
@@ -198,7 +199,6 @@ body {
 }
 
 .top-button {
-  display: inline-block;
     margin-top: 15px;
     padding: 0.5em 1em;
     background-color: #7ba795;
