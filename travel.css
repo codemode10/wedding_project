@@ -198,7 +198,8 @@ body {
 }
 
 .top-button {
-      margin-top: 20px !important;
+  display: inline-block;
+    margin-top: 15px;
     padding: 0.5em 1em;
     background-color: #7ba795;
     color: white;

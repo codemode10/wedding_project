@@ -1,7 +1,32 @@
 body {
   font-family: monospace;
-  
 }
+
+.footer {
+  color: #b36a5e;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center; /* optional: aligns items vertically in the center */
+  justify-content: center;
+}
+
+.github-icon {
+  font-size: 30px; /* adjust this value to your needs */
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.icon-container {
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease-in 7s forwards;
+}
+
 
 h1 {
   font-size: 35px;
@@ -12,19 +37,6 @@ h1 {
 h2 {
   font-size: 25px;
   color: white;; /* replace with the color you want */
-}
-
-.h1-bottom {
-color: #b36a5e;
-text-align: center;
-font-size: 35px;
-}
-
-.p-bottom {
-  color: #b36a5e;
-  font-size: 17px;
-  text-align: center;
-
 }
 
 p {
@@ -190,7 +202,7 @@ color: #b36a5e;
 
 .button-group {
   position: absolute;
-  bottom: 5vh;
+  bottom: 3vh;
   right: 5vh;
   display: flex;
   flex-direction: column; 
@@ -304,7 +316,7 @@ color: #b36a5e;
   padding: 50px;
   border: 2px solid #7ba795;
   background-color: #7ba795;
-  margin-bottom: 5vh;
+  margin-bottom: 4vh;
   box-shadow: 7px 7px #ff9888;
   text-align: center;
 }
@@ -1026,6 +1038,22 @@ font-size: 2rem;
   margin-bottom: 40px;
   margin-top: 20px;
   transform: rotate(2deg);
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  font-family: monospace; /* replace with the color you want */
+}
+
+h2 {
+  font-size: 50px;
+  color: white;; /* replace with the color you want */
+}
+
+p {
+  font-size: 40px;
+  color: white;; /* replace with the color you want */
 }
 
 }
