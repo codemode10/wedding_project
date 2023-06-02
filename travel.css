@@ -389,5 +389,17 @@ margin: auto;
 text-align: center;
 }
 
+h1 {
+  font-size: 60px;
+  color: #b36a5e;
+  font-family: monospace; /* replace with the color you want */
+}
+
+p {
+  font-size: 40px;
+  color: #b36a5e;; /* replace with the color you want */
+}
+
+
 }
 
