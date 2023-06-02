@@ -85,7 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  background-color: 
 }
 
 
@@ -262,6 +262,13 @@ body {
   justify-content: space-between;
   border-radius: 20px;
   padding: 20px;
+}
+
+.traveldiv0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
 }
 
 .traveldiv1 {
