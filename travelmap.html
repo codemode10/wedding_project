@@ -2,7 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <title>Cafes</title>
+    <title>Travel</title>
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
@@ -14,37 +14,9 @@
       <div class="section6-container">
           <div class="traveldiv0">
               <h1>Travel in Provence </h1>
-              <p>Here are a some villages you cannot skip when in Provence. </p>
+              <p>Here are a some villages you cannot skip when in Provence.</p>
           </div>
     <div id='map'></div>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoibG1tYXA1MCIsImEiOiJjbGVpbjZuYWgwMzJyM29taTV2NmdjbGt4In0.gPz7ne0wUR2i3IDc8wnTqw';
-    const map = new mapboxgl.Map({
-      container: 'map',
-      // Replace YOUR_STYLE_URL with your style URL.
-      style: 'mapbox://styles/lmmap50/cliukql2v010g01qv90gie3l5',
-      center: [5.24768, 43.71388 ],
-      zoom: 9
-    });
-
-    map.on('click', (event) => {
-
-    const features = map.queryRenderedFeatures(event.point, {
-      layers: ['provence'] // replace with your layer name
-    });
-    if (!features.length) {
-      return;
-    }
-    const feature = features[0];
-
-    const popup = new mapboxgl.Popup({ offset: [0, -15] })
-      .setLngLat(feature.geometry.coordinates)
-      .setHTML(
-        `<h3>${feature.properties.title}</h3>`
-      )
-      .addTo(map);
-    });
-  </script>
 
 
       <div class="divider"></div>
@@ -54,7 +26,7 @@
           </div>
           <div class="right-section6 ">
               <h1>Les Baux-de-Provence</h1>
-              <p>Located in the Alpilles mountains, atop a rocky outcrop that is crowned with a ruined castle overlooking the plains to the south. Little far away but stunning. Population 391.</p>
+              <p>Located in the Alpilles mountains, atop a rocky outcrop that is crowned with a ruined castle overlooking the plains to the south. Little far away but stunning. Population 391. There is a very cool immersive art gallery here - Carrières des Lumières, located in an old underground quarry. Comes highly recommened by the groom (groom has good taste)</p>
               <a class="top-button" href="https://goo.gl/maps/uZ1VhfKz58rDNK6i7" target="_blank">Open maps</a>
           </div>
       </div>
@@ -114,11 +86,35 @@
           </div>
       </div>
   </div>
-
-
 </div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibG1tYXA1MCIsImEiOiJjbGVpbjZuYWgwMzJyM29taTV2NmdjbGt4In0.gPz7ne0wUR2i3IDc8wnTqw';
+  const map = new mapboxgl.Map({
+    container: 'map',
+    // Replace YOUR_STYLE_URL with your style URL.
+    style: 'mapbox://styles/lmmap50/cliukql2v010g01qv90gie3l5',
+    center: [5.24768, 43.71388 ],
+    zoom: 9
+  });
+
+  map.on('click', (event) => {
+
+  const features = map.queryRenderedFeatures(event.point, {
+    layers: ['provence'] // replace with your layer name
+  });
+  if (!features.length) {
+    return;
+  }
+  const feature = features[0];
+
+  const popup = new mapboxgl.Popup({ offset: [0, -15] })
+    .setLngLat(feature.geometry.coordinates)
+    .setHTML(
+      `<h3>${feature.properties.title}</h3>`
+    )
+    .addTo(map);
+  });
+</script>
 <script src="travel.js"></script>
-
-
   </body>
 </html>
