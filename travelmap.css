@@ -1,0 +1,421 @@
+#map {
+  position: relative;
+  width: 50vw; /* substracting 2rem to accommodate the padding */
+  height: 60vh;
+  padding: 1rem;
+  border-radius: 10px; /* adjust as needed */
+  margin: auto; /* centers the map horizontally */
+  margin-bottom: 3vh;
+}
+
+body {
+  font-family: monospace;
+}
+
+/* Define the base style of elements */
+.traveldiv1,
+.traveldiv2,
+.traveldiv3,
+.traveldiv4,
+.traveldiv5,
+.traveldiv6 {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+/* Define the animate class style */
+.animate {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+
+/* Define the style for the divider class */
+.divider {
+  height: 1px;
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 35px;
+  color: #b36a5e;
+  font-family: monospace; /* replace with the color you want */
+}
+
+h2 {
+  font-size: 25px;
+  color: white;; /* replace with the color you want */
+}
+
+.h1-bottom {
+color: #b36a5e;
+text-align: center;
+font-size: 35px;
+}
+
+.p-bottom {
+  color: #b36a5e;
+  font-size: 17px;
+  text-align: center;
+
+}
+
+p {
+  font-size: 17px;
+  color: #b36a5e;; /* replace with the color you want */
+}
+
+.page-container {
+  border: #b36a5e;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.divider {
+height: 1px; /* Adjust as needed */
+background-color: #7ba795; /* Adjust color as needed */
+margin-top: 9vh; /* Adjust as needed */
+margin-bottom: 9vh; /* Adjust as needed */
+}
+
+
+.section6-container {
+text-align: center;
+justify-content: space-between;
+border-radius: 30px;
+padding: 40px;
+
+}
+
+.traveldiv0 {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color:
+}
+
+
+.traveldiv1 {
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.left-section6 {
+flex-basis: 50%;
+margin: auto;
+margin-right: 5%;
+text-align: center;
+}
+
+.right-section6 {
+flex-basis: 50%;
+ flex-basis: 50%;
+margin-right: 5%;
+margin: auto;
+text-align: center;
+}
+
+
+.img6 {
+border-radius: 20px;
+width: 100%;
+box-shadow: 3px 3px #7ba795;
+
+}
+
+.traveldiv2 {
+display: flex;
+justify-content: space-between;
+
+}
+
+.left-section7 {
+flex-basis: 50%;
+margin: auto;
+margin-right: 5%;
+
+}
+
+.right-section7 {
+flex-basis: 50%;
+margin-right: 5%;
+margin: auto;
+text-align: center;
+}
+
+.img7 {
+width: 100%;
+border-radius: 20px;
+box-shadow: 3px 3px white;
+}
+
+.traveldiv3 {
+display: flex;
+justify-content: space-between;
+
+}
+
+.left-section-travel-3{
+flex-basis: 50%;
+margin: auto;
+margin-right: 5%;
+text-align: center;
+}
+
+.right-section-travel-3{
+flex-basis: 50%;
+margin: auto;
+color: #b36a5e;
+text-align: center;
+}
+
+.traveldiv4 {
+display: flex;
+justify-content: space-between;
+
+}
+
+.left-section-travel-4{
+flex-basis: 50%;
+margin: auto;
+margin-right: 5%;
+text-align: center;
+}
+
+.right-section-travel-4{
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+}
+
+.traveldiv5 {
+display: flex;
+justify-content: space-between;
+
+}
+
+.left-section-travel-5{
+flex-basis: 50%;
+margin: auto;
+margin-right: 5%;
+text-align: center;
+}
+
+.right-section-travel-5{
+flex-basis: 50%;
+margin: auto;
+color: #b36a5e;
+text-align: center;
+}
+
+.traveldiv6 {
+display: flex;
+justify-content: space-between;
+
+}
+
+.travel-image {
+border-radius: 20px;
+width: 80%;
+object-fit: fill;
+box-shadow: 7px 7px white;
+margin-left: 50px;
+transform: rotate(-7deg);
+}
+
+.left-section-travel-6{
+flex-basis: 50%;
+margin: auto;
+margin-right: 5%;
+text-align: center;
+}
+
+.right-section-travel-6{
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+}
+
+.top-button {
+  margin-top: 15px;
+  padding: 0.5em 1em;
+  background-color: #7ba795;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 3px 3px #b36a5e;
+  border: none;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+.top-button:hover {
+background-color: #7ba795;
+
+box-shadow: 8px 8px #b36a5e;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+.section6-container {
+text-align: center;
+justify-content: space-between;
+border-radius: 20px;
+padding: 20px;
+}
+
+.traveldiv0 {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+.traveldiv1 {
+flex-direction: column;
+justify-content: space-between;
+margin-top: 6vh;
+}
+
+.left-section6 {
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+}
+
+.right-section6 {
+flex-basis: 50%;
+margin: auto;
+color: #b36a5e;
+text-align: center;
+}
+
+.img6 {
+border-radius: 20px;
+width: 100%;
+object-fit: fill;
+box-shadow: 7px 7px #7ba795;
+}
+
+.traveldiv2 {
+display: flex;
+flex-direction: column-reverse;
+justify-content: space-between;
+
+}
+
+.left-section7 {
+flex-basis: 50%;
+margin: auto;
+
+}
+
+.right-section7 {
+flex-basis: 50%;
+margin-right: 5%;
+margin: auto;
+text-align: center;
+}
+
+.img7 {
+width: 100%;
+border-radius: 20px;
+}
+
+.traveldiv3 {
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+.left-section-travel-3{
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+}
+
+.right-section-travel-3{
+flex-basis: 50%;
+margin: auto;
+color: #b36a5e;
+text-align: center;
+}
+
+.traveldiv4 {
+display: flex;
+flex-direction: column-reverse;
+
+}
+
+.left-section-travel-4{
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+}
+
+.right-section-travel-4{
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+}
+
+.traveldiv5 {
+flex-direction: column;
+
+}
+
+.left-section-travel-5{
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+}
+
+.right-section-travel-5{
+flex-basis: 50%;
+margin: auto;
+color: #b36a5e;
+text-align: center;
+}
+
+.traveldiv6 {
+display: flex;
+flex-direction: column-reverse;
+
+}
+
+.left-section-travel-6{
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+margin-bottom: 3vh;
+}
+
+.right-section-travel-6{
+flex-basis: 50%;
+margin: auto;
+text-align: center;
+}
+
+h1 {
+font-size: 60px;
+color: #b36a5e;
+font-family: monospace; /* replace with the color you want */
+}
+
+p {
+font-size: 40px;
+color: #b36a5e;; /* replace with the color you want */
+}
+
+
+}
