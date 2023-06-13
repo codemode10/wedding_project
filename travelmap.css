@@ -273,6 +273,7 @@ box-shadow: 8px 8px #b36a5e;
   border-radius: 20px; /* adjust as needed */
   margin: auto; /* centers the map horizontally */
   margin-bottom: 3vh;
+  margin-top: 15px;
 }
 
 .section6-container {
