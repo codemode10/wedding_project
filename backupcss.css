@@ -633,7 +633,7 @@ box-shadow: 5px 5px;
 @media screen and (max-width: 1000px) {
 
   body {
-    font-size: 10px;
+    font-size: 30px;
   }
 
   .banner-h1 {
