@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+
 body {
-    font-family: monospace;
+    font-family: raleway;
   }
-  
+
   /* Define the base style of elements */
 .traveldiv1,
 .traveldiv2,
@@ -27,31 +30,31 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-  
+
   h1 {
     font-size: 35px;
     color: #b36a5e;
-    font-family: monospace; /* replace with the color you want */
+    
   }
-  
+
   h2 {
     font-size: 25px;
     color: white;; /* replace with the color you want */
   }
-  
+
   .h1-bottom {
   color: #b36a5e;
   text-align: center;
   font-size: 35px;
   }
-  
+
   .p-bottom {
     color: #b36a5e;
     font-size: 17px;
     text-align: center;
-  
+
   }
-  
+
   p {
     font-size: 17px;
     color: #b36a5e;; /* replace with the color you want */
@@ -78,22 +81,22 @@ body {
   justify-content: space-between;
   border-radius: 30px;
   padding: 40px;
-  
+
 }
 
 .traveldiv0 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: 
+  background-color:
 }
 
 
 .traveldiv1 {
   display: flex;
   justify-content: space-between;
-  
-  
+
+
 }
 
 .left-section6 {
@@ -116,7 +119,7 @@ body {
   border-radius: 20px;
   width: 100%;
   box-shadow: 3px 3px #7ba795;
-  
+
 }
 
 .traveldiv2 {
@@ -129,7 +132,7 @@ body {
   flex-basis: 50%;
   margin: auto;
   margin-right: 5%;
-  
+
 }
 
 .right-section7 {
@@ -148,7 +151,7 @@ body {
 .traveldiv3 {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .left-section-travel-3{
@@ -168,7 +171,7 @@ body {
 .traveldiv4 {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .left-section-travel-4{
@@ -187,7 +190,7 @@ body {
 .traveldiv5 {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .left-section-travel-5{
@@ -207,7 +210,7 @@ body {
 .traveldiv6 {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .travel-image {
@@ -268,7 +271,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
+
 }
 
 .traveldiv1 {
@@ -301,13 +304,13 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  
+
 }
 
 .left-section7 {
   flex-basis: 50%;
   margin: auto;
-  
+
 }
 
 .right-section7 {
@@ -409,4 +412,3 @@ p {
 
 
 }
-

@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+
 body {
   font-family: monospace;
+  font-size: 16px;
 }
 
 .footer {
-  color: #b36a5e;
+  color: #b85747;
   text-align: center;
 }
 
@@ -29,18 +33,18 @@ body {
 
 
 h1 {
-  font-size: 35px;
+  font-size: 2rem;
   color: white;
-  font-family: monospace; /* replace with the color you want */
+
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 1.5rem;
   color: white;; /* replace with the color you want */
 }
 
 p {
-  font-size: 17px;
+  font-size: 1rem;
   color: white;; /* replace with the color you want */
 }
 
@@ -155,7 +159,7 @@ html {
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 150%;
   border: none;
   outline: none;
   background-color: #73a892;
@@ -180,24 +184,24 @@ html {
   text-align: center;
   border-radius: 20px;
   padding: 70px;
-  background-image: url("images/chavhouse.png"); 
-  background-size: cover; 
-  background-position: center; 
-  height: 67vh; 
+  background-image: url("images/chavhouse.png");
+  background-size: cover;
+  background-position: center;
+  height: 67vh;
   position: relative;
-  
+
 }
 
 .banner-h1 {
-  font-size: 40px;
+  font-size: 2.3rem;
 margin-top: 50px;
-color: #b36a5e;
+color: #b85747;
 }
 
 .banner-h2 {
   margin-bottom: 5vh;
-  color: #b36a5e;
-  font-size: 20px;
+  color: #b85747;
+  font-size: 1.5rem;
 }
 
 .button-group {
@@ -205,13 +209,13 @@ color: #b36a5e;
   bottom: 3vh;
   right: 5vh;
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-end; 
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .button-group .top-button{
-  margin-left: auto; 
+  margin-left: auto;
 }
 
 .top-button {
@@ -221,7 +225,7 @@ color: #b36a5e;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 5px;
   box-shadow: 3px 3px;
   border: none;
@@ -240,7 +244,7 @@ color: #b36a5e;
 .custom-rsvp {
 
   display: inline-block;
-  
+
 }
 
 
@@ -250,25 +254,24 @@ color: #b36a5e;
   border-radius: 20px;
   padding: 30px;
   height: 60vh;
-  border: 2px solid #b36a5e;
-  background-color: #b36a5e;
+  background-color: #B85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
 }
 
 .left-section2 {
   flex-basis: 50%;
-  margin: auto;    
+  margin: auto;
 }
 
 .right-section2 {
   flex-basis: 50%;
   margin-right: 5%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: right;
   padding-right: 5%;
-  
+
 }
 
 .section3-container {
@@ -277,8 +280,8 @@ color: #b36a5e;
   border-radius: 20px;
   padding: 30px;
   height: 60vh;
-  border: 2px solid #b36a5e;
-  background-color: #b36a5e;
+  border: 2px solid #b85747;
+  background-color: #b85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
 }
@@ -287,7 +290,7 @@ color: #b36a5e;
   flex-basis: 50%;
   margin-right: 5%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: left;
   padding-left: 5%;
 }
@@ -303,8 +306,8 @@ color: #b36a5e;
   border-radius: 20px;
   padding: 30px;
   height: 50vh;
-  border: 2px solid #b36a5e;
-  background-color: #b36a5e;
+  border: 2px solid #b85747;
+  background-color: #b85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
 }
@@ -330,7 +333,7 @@ color: #b36a5e;
   flex-basis: 50%;
   margin-right: 5%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: right;
   padding-right: 5%;
 }
@@ -341,8 +344,8 @@ color: #b36a5e;
   border-radius: 20px;
   padding: 30px;
   height: 60vh;
-  border: 2px solid #b36a5e;
-  background-color: #b36a5e;
+  border: 2px solid #b85747;
+  background-color: #b85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
 }
@@ -351,7 +354,7 @@ color: #b36a5e;
   flex-basis: 50%;
   margin-right: 5%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: left;
   padding-left: 5%;
 }
@@ -366,8 +369,8 @@ color: #b36a5e;
   justify-content: space-between;
   border-radius: 20px;
   padding: 30px;
-  border: 2px solid #b36a5e;
-  background-color: #b36a5e;
+  border: 2px solid #b85747;
+  background-color: #b85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
 }
@@ -377,10 +380,10 @@ color: #b36a5e;
   order: 2;
   margin-right: 5%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: right;
   padding-right: 5%;
-    
+
 
 
 }
@@ -388,7 +391,7 @@ color: #b36a5e;
 .right-section5 {
   flex-basis: 50%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: left;
   margin-left: 3%;
   order: 1;
@@ -399,11 +402,11 @@ color: #b36a5e;
   justify-content: space-between;
   border-radius: 50px;
   padding: 70px;
-  border: 2px solid #b36a5e;
-  background-color: #b36a5e;
+  border: 2px solid #b85747;
+  background-color: #b85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
-  
+
 }
 
 .traveldiv1 {
@@ -422,7 +425,7 @@ color: #b36a5e;
 .right-section6 {
   flex-basis: 50%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: center;
 }
 
@@ -442,7 +445,7 @@ color: #b36a5e;
   flex-basis: 50%;
   margin: auto;
   margin-right: 5%;
-  
+
 }
 
 .right-section7 {
@@ -474,7 +477,7 @@ color: #b36a5e;
 .right-section-travel-3{
   flex-basis: 50%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: center;
 }
 
@@ -513,7 +516,7 @@ color: #b36a5e;
 .right-section-travel-5{
   flex-basis: 50%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: center;
 }
 
@@ -555,15 +558,15 @@ color: #b36a5e;
       align-items: center;
       margin: 4vh 0;
 }
-  
+
 .icon-container i {
-font-size: 2em;
+font-size: 2rem;
 }
 
 
 
 .fa-solid {
-color: #b36a5e;
+color: #b85747;
 
 }
 
@@ -608,43 +611,47 @@ margin-right: 40px;
 
 .mapbutton {
 border-radius: 5px;
-background-color: #73a892; 
-border: none; 
-color: white; 
-padding: 12px 24px; 
-text-align: center; 
-text-decoration: none; 
-display: inline-block; 
-font-size: 1rem; 
-margin: 4px 2px; 
-cursor: pointer; 
+background-color: #73a892;
+border: none;
+color: white;
+padding: 12px 24px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 1rem;
+margin: 4px 2px;
+cursor: pointer;
 box-shadow: 3px 3px;
 }
 
 .mapbutton:hover {
-background-color: #5F8575; 
+background-color: #5F8575;
 box-shadow: 5px 5px;
 
 }
 
 @media screen and (max-width: 1000px) {
 
+  body {
+    font-size: 30px;
+  }
+
   .banner-h1 {
-    font-size: 60px;
+    font-size: 3.2rem;
     margin-top: 40px;
-    color: #b36a5e;
+    color: #b85747;
     }
-    
+
     .banner-h2 {
-      font-size: 40px;
+      font-size: 2rem;
       margin-top: 50px;
-      color: #b36a5e;
+      color: #b85747;
       }
-  
+
 
   .p-bottom {
-    color: #b36a5e;
-    font-size: 30px;
+    color: #b85747;
+    font-size: 1rem;
   }
 
 
@@ -653,16 +660,16 @@ box-shadow: 5px 5px;
   margin: 0 auto;
   margin-bottom: 5%;
   margin-top: 3%;
-  
+
 }
 
 .section1-container {
   text-align: center;
   border-radius: 30px;
   padding: 90px;
-  background-size: cover; 
-  background-position: left bottom; 
-  height: 75vh; 
+  background-size: cover;
+  background-position: left bottom;
+  height: 75vh;
 }
 
 .bannerh2 {
@@ -672,12 +679,12 @@ box-shadow: 5px 5px;
 
 
 .button-group {
-  
+
   bottom: 2vh;
   right: 2vh;
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-end; 
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -692,6 +699,7 @@ box-shadow: 5px 5px;
   border-radius: 15px;
   box-shadow: 7px 7px;
   font-family: monospace;
+
 }
 
 .top-button:hover {
@@ -711,7 +719,7 @@ box-shadow: 5px 5px;
 .left-section2 {
   margin: 0;
   text-align: center;
-  
+
 }
 
 .right-section2 {
@@ -744,7 +752,7 @@ align-items: center;
 .img3 {
   max-width: 60%;
   height: auto;
-  
+
 }
 
 .section4-container {
@@ -752,7 +760,7 @@ align-items: center;
   flex-direction: column;
   border-radius: 30px;
   padding: 70px;
-  border: 1px solid #b36a5e;
+  border: 1px solid #b85747;
   height: auto;
   box-shadow: 15px 15px #ff9888;
 }
@@ -766,7 +774,7 @@ align-items: center;
 .right-section4 {
   flex-basis: 50%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: center;
 }
 
@@ -776,7 +784,7 @@ align-items: center;
   border-radius: 30px;
   padding: 70px;
   padding-bottom: 5vh;
-  border: 1px solid #b36a5e;
+  border: 1px solid #b85747;
   box-shadow: 15px 15px #ff9888;
   text-align: center;
 
@@ -785,9 +793,9 @@ align-items: center;
 .left-section5 {
   text-align: center;
   padding-right: 0;
-  
 
-  
+
+
 }
 
 .right-section5 {
@@ -800,7 +808,7 @@ align-items: center;
   border-radius: 20px;
   padding: 70px;
   box-shadow: 15px 15px #ff9888;
-  
+
 }
 
 
@@ -822,7 +830,7 @@ align-items: center;
 .right-section6 {
   flex-basis: 50%;
   margin: auto;
-  color: #b36a5e;
+  color: #b85747;
   text-align: center;
 }
 
@@ -843,7 +851,7 @@ align-items: center;
 .left-section7 {
   flex-basis: 50%;
   margin: auto;
-  
+
 }
 
 .right-section7 {
@@ -873,7 +881,7 @@ text-align: center;
 .right-section-travel-3{
 flex-basis: 50%;
 margin: auto;
-color: #b36a5e;
+color: #b85747;
 text-align: center;
 }
 
@@ -909,7 +917,7 @@ text-align: center;
 .right-section-travel-5{
 flex-basis: 50%;
 margin: auto;
-color: #b36a5e;
+color: #b85747;
 text-align: center;
 }
 
@@ -946,12 +954,12 @@ font-size: 2rem;
 }
 
 .icon-container i {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 
 .fa-solid {
-  color: #b36a5e;
+  color: #b85747;
 }
 
 .img1 {
@@ -979,23 +987,23 @@ font-size: 2rem;
 
 .mapbutton {
   border-radius: 15px;
-  background-color: #73a892; 
-  border: none; 
-  color: white; 
-  padding: 15px 25px; 
-  text-align: center; 
-  text-decoration: none; 
-  display: inline-block; 
-  font-size: 2rem; 
-  margin: 4px 2px; 
-  cursor: pointer; 
+  background-color: #73a892;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 4px 2px;
+  cursor: pointer;
   box-shadow: 10px 10px;
 }
 
 .mapbutton:hover {
-  background-color: #5F8575; 
+  background-color: #5F8575;
   box-shadow: 15px 15px;
-  
+
 }
 #myBtn {
   display: none;
@@ -1040,22 +1048,6 @@ font-size: 2rem;
   transform: rotate(2deg);
 }
 
-h1 {
-  font-size: 60px;
-  color: white;
-  font-family: monospace; /* replace with the color you want */
-}
 
-h2 {
-  font-size: 50px;
-  color: white;; /* replace with the color you want */
-}
-
-p {
-  font-size: 40px;
-  color: white;; /* replace with the color you want */
-}
 
 }
-
-  
