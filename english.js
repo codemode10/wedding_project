@@ -39,8 +39,8 @@ const typeText = (elementId, text, speed, callback) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  typeText('typing-h1', 'Welcome to the wedding of Lloyd and Mathilde', 80, () => {
-    typeText('typing-h2', 'Saint-Cannat, Provence, France', 80)
+  typeText('typing-h1', 'Welcome to the wedding of Lloyd and Mathilde', 70, () => {
+    typeText('typing-h2', 'Saint-Cannat, Provence, France', 70)
   });
 
 });

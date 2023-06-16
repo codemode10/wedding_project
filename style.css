@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .footer {
@@ -50,7 +50,7 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: white;; /* replace with the color you want */
 }
 
@@ -242,8 +242,7 @@ color: #b85747;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 3px 3px;
   border: none;
   cursor: pointer;
