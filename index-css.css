@@ -34,7 +34,7 @@ h2 {
     display: flex;
     justify-content: center;
     opacity: 0;
-    animation: floatIn 2s ease-out 3s forwards;
+    animation: floatIn 1s ease-out 2s forwards;
 }
 
 .mapbutton {
@@ -94,7 +94,7 @@ h2 {
         font-size: 3rem;
         text-align: center;
     }
-font-size: 1.2rem;
+
 
     .landing-container {
         text-align: left;

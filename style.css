@@ -276,12 +276,12 @@ color: #b85747;
 }
 
 .left-section2 {
-  flex-basis: 50%;
+  flex-basis: 40%;
   margin: auto;
 }
 
 .right-section2 {
-  flex-basis: 50%;
+  flex-basis: 60%;
   margin-right: 5%;
   margin: auto;
   color: #b85747;
