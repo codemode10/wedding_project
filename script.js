@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   // Check if the viewport width is more than 768px (common breakpoint for desktop screens)
   if (window.matchMedia("(min-width: 1000px)").matches) {
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 500) {
       document.getElementById("myBtn").style.display = "block";
     } else {
       document.getElementById("myBtn").style.display = "none";
@@ -40,9 +40,9 @@ const typeText = (elementId, text, speed, callback) => {
 
 document.addEventListener('DOMContentLoaded', () => {
   typeText('typing-h1', 'Bienvenue au mariage de Mathilde & Lloyd', 80, () => {
-    typeText('typing-h2', 'À Saint-Cannat, Provence, France', 80)
+    typeText('typing-h2', 'Le 15 septembre 2023', 80)
   });
-  
+
 });
 
 var cloudinaryInstance = cloudinary.Cloudinary.new({ cloud_name: 'degbra6ra' });
@@ -96,21 +96,21 @@ function uploadImage() {
     return;
   }
 
-  
+
   fileMessage.textContent = `Uploading ${files.length} image(s)...`;
 
- 
+
   uploadImages(files, (loaded, total) => {
     console.log(`Uploaded ${loaded} of ${total} bytes`);
   })
     .then(() => {
       alert('Images uploaded successfully!');
-      
+
       fileMessage.textContent = '';
     })
     .catch(() => {
       alert('Error uploading images');
-      
+
       fileMessage.textContent = '';
     });
 }
@@ -119,10 +119,10 @@ document.addEventListener("DOMContentLoaded", function() {
   var scrollAnimates = document.querySelectorAll('.scroll-animate');
 
   if ("IntersectionObserver" in window) {
-      let observer = new IntersectionObserver((entries, observer) => { 
+      let observer = new IntersectionObserver((entries, observer) => {
           entries.forEach(entry => {
               if (entry.isIntersecting) {
-                  entry.target.classList.add("animate"); 
+                  entry.target.classList.add("animate");
                   observer.unobserve(entry.target);
               }
           });
@@ -138,12 +138,3 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }
 });
-
-
-
-
-
-  
-  
-
-
