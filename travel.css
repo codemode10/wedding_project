@@ -34,7 +34,7 @@ body {
   h1 {
     font-size: 35px;
     color: #b36a5e;
-    
+
   }
 
   h2 {
@@ -246,7 +246,7 @@ body {
     box-shadow: 3px 3px #b36a5e;
     border: none;
     cursor: pointer;
-    font-family: monospace;
+    
 }
 
 .top-button:hover {
@@ -402,7 +402,7 @@ text-align: center;
 h1 {
   font-size: 60px;
   color: #b36a5e;
-  font-family: monospace; /* replace with the color you want */
+
 }
 
 p {
