@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mellor's Wedding</title>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+	  <link rel="stylesheet" type="text/css" href="style.css">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
     <script src="https://kit.fontawesome.com/b42a696e69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -13,24 +21,46 @@
     <div class="page-container">
 
         <div class="section1-container">
-            <audio controls autoplay style="position: absolute; bottom: 20px; left:20px;">
-                <source src="POLO & PAN - Canopée (audio).mp3" type="audio/mpeg">
-            </audio>
             <h1 class="banner-h1" id="typing-h1"></h1>
             <h2 class="banner-h2" id="typing-h2"></h2>
             <div class="button-group">
               <a href="#wedding-day" class="top-button line-up">Programme</a>
               <a href="#RSVP" class="top-button line-up">RSVP</a>
               <a href="#travel-provence" class="top-button line-up">Où dormir?</a>
-              <a href="https://www.millemercismariage.com/mathildelloyd/liste.html" class="top-button line-up" ">Liste de mariage</a>
+              <a href="https://www.millemercismariage.com/mathildelloyd/liste.html" class="top-button line-up" target="_blank">Liste de mariage</a>
               <a href="#Image Upload" class="top-button line-up">Album photo</a>
             </div>
         </div>
 
-
         <div class="icon-container">
-            <i class="fa-solid fa-circle-down fa-beat"></i>
+          <audio id="audioPlayer" class="icon-container" style="display:none;">
+            <source src="POLO & PAN - Canopée (audio).mp3" type="audio/mpeg">
+          </audio>
+
+          <div id="playButton">
+            <i id="playIcon" class="fa-solid fa-circle-play" style="color: #b85747;"></i>
+          </div>
+
+          <script>
+            var audioPlayer = document.getElementById('audioPlayer');
+            var playButton = document.getElementById('playButton');
+            var playIcon = document.getElementById('playIcon');
+
+            playButton.addEventListener('click', function() {
+                if (audioPlayer.paused) {
+                    audioPlayer.play();
+                    playIcon.className = 'fa-solid fa-circle-pause';
+                } else {
+                    audioPlayer.pause();
+                    playIcon.className = 'fa-solid fa-circle-play';
+                }
+            });
+          </script>
+
         </div>
+
+
+
 
         <div class="section2-container scroll-animate" id="wedding-day">
             <div class="left-section2">
@@ -39,10 +69,10 @@
             <div class="right-section2">
                 <h1>Le jour J, Vendredi 15 Septembre </h1>
                 <p><b>16 heures:</b> Célébration à l'église Notre-Dame de Vie, Saint-Cannat 13760</p>
+                <a href="https://goo.gl/maps/4aYe4jX77y3thkgC9" class="top-button" target="_blank">Église</a>
                 <p><b>Dès 17h45:</b> Cocktail suivi du dîner à La Bergerie </p>
-                <br>
-                <br>
-                <a class="mapbutton" href="https://goo.gl/maps/rNcdZcRrm251Ys2t8" target="_blank">Adresse</a>
+
+                <a class="top-button" href="https://goo.gl/maps/rNcdZcRrm251Ys2t8" target="_blank">La Bergerie</a>
                 <p><b>Comment venir?</b> Gare Aix-en-Provence TGV ou aéroport de Marseille puis besoin de louer une voiture. </p>
                 <p> Pensez au co-voiturage 🙂</p>
 
@@ -69,26 +99,27 @@
         <div class="section5-container scroll-animate" id="RSVP">
             <div class="left-section5">
                 <h1>RSVP </h1>
-                <p class="p-red"> Merci de nous confirmer votre présence avant le 15 juillet et de nous indiquer vos potentielles allergies/intolérances alimentaires en cliquant sur ce lien:</p> <a class="top-button custom-rsvp" href="https://docs.google.com/forms/d/e/1FAIpQLSelJLeE79EdF7mvr--MH6ABviRgEbktoQKv1ucwdnBKvN9UbQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Confirmer ma présence</a>
+                <p class="p-red"> Merci de nous confirmer votre présence avant fin juillet et de nous indiquer vos potentielles allergies/intolérances alimentaires.</p>
+                <a class="top-button custom-rsvp" href="https://docs.google.com/forms/d/e/1FAIpQLSelJLeE79EdF7mvr--MH6ABviRgEbktoQKv1ucwdnBKvN9UbQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Confirmer ma présence</a>
             </div>
             <div class="right-section5">
                 <img class="img5" src="images/4.svg" alt="">
             </div>
         </div>
 
-
-        <div class="section2-container scroll-animate" id="travel-provence">
-          <div class="left-section2">
-              <img class="travel-image" src="images/iStock-482030300.jpeg" alt="image of church">
+        <div class="section3-container scroll-animate" id="day-after">
+          <div class="left-section3">
+              <h1>Où dormir?</h1>
+              <p>Vous avez la possibilité de planter votre tente dans le jardin vendredi & samedi pour profiter jusqu'au bout de la nuit 💃🏽
+              <p>Sinon, voici une sélection de lieux autour de la Bergerie:
+              </p>
+              <a class="top-button" href="https://docs.google.com/spreadsheets/d/1bNkRbdaiswrw9YPDJGuow4hud9Vcs1fe/edit?fbclid=IwAR1r_5pN4WtBq6_lZsTJagr06nUOKr1BdlL3Qbh5UFZDy_zJcnZG-wRwQts#gid=1287700188" target="_blank">Hébergements 🏠</a>
           </div>
-          <div class="right-section2">
-              <h1>Où dormir? </h1>
-              <p class="p-red">Vous avez la possibilité de planter votre tente dans le jardin vendredi & samedi pour profiter jusqu'au bout de la nuit 💃🏽 </p>
-              <p class="p-red">Sinon, voici une sélection de lieux autour de la Bergerie:</p>
-                <a class="mapbutton" href="https://goo.gl/maps/sK9XQXvZUMWbmn949" target="_blank">Hébergements 🏠</a>
-            </p>
+          <div class="right-section3">
+              <img class="img30" src="images/Tent.svg" alt="">
           </div>
       </div>
+
 
 
 
@@ -112,7 +143,7 @@
       </div>
 
         <footer class="footer-container">
-            <p class="footer"> Webstie by the Groom - Find me here on <a href="https://github.com/codemode10">github</a> &nbsp;<i class="fa-brands fa-github fa-shake github-icon" style="color: #b36a5e;"></i></p>
+            <p class="footer"> Webstie by the Groom - Find me here on <a href="https://github.com/codemode10" target="_blank">github</a> &nbsp;<i class="fa-brands fa-github fa-shake github-icon" style="color: #b36a5e;"></i></p>
         </footer>
     </div>
 

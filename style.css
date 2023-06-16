@@ -593,6 +593,12 @@ height: auto;
 float: right;
 margin-right: 25px;
 }
+.img30 {
+  max-width: 57%;
+  height: auto;
+  float: right;
+  margin-right: 50px;
+  }
 
 .img4 {
 max-width: 50%;
@@ -967,5 +973,9 @@ font-size: 2rem;
   cursor: pointer;
 }
 
+.img30 {
+  
+  margin-right: 0px;
+  }
 
 }
