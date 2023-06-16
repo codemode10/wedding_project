@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
 
 body {
-  font-family: raleway;
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 200;
 }
 
 #map {
@@ -45,7 +48,7 @@ body {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 2rem;
   color: #b36a5e;
 
 }
@@ -53,6 +56,7 @@ h1 {
 h2 {
   font-size: 25px;
   color: white;; /* replace with the color you want */
+  font-size: 1.5rem;
 }
 
 .h1-bottom {
@@ -63,13 +67,13 @@ font-size: 35px;
 
 .p-bottom {
   color: #b36a5e;
-  font-size: 17px;
+  font-size: 1.3rem;
   text-align: center;
 
 }
 
 p {
-  font-size: 17px;
+  font-size: 1.3rem;
   color: #b36a5e;; /* replace with the color you want */
 }
 
@@ -421,18 +425,9 @@ margin: auto;
 text-align: center;
 }
 
-h1 {
-font-size: 30px;
-color: #b36a5e;
 
 
-}
 
-p {
-font-size: 15px;
-color: #b36a5e;; /* replace with the color you want */
-margin-bottom: 30px;
-}
 
 
 }
