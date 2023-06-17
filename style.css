@@ -701,7 +701,7 @@ box-shadow: 5px 5px;
 }
 
 .top-button {
-  margin: 10px 0;
+  margin: 7px 0;
   padding: 0.7em 1em;
   background-color: #7ba795;
   color: white;
@@ -754,10 +754,12 @@ box-shadow: 5px 5px;
   padding-left: 0;
 }
 
+
+
 .right-section3 {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img3 {
@@ -788,6 +790,7 @@ align-items: center;
   margin: auto;
   color: #b85747;
   text-align: center;
+  padding-right: 0px;
 }
 
 .section5-container {
