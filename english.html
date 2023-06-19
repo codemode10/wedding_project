@@ -37,32 +37,36 @@
 
 
 
-        <div class="icon-container">
-          <audio id="audioPlayer" class="icon-container" style="display:none;">
-            <source src="Bon Entendeur vs Tina Charles - I Love To Love (Audio).mp3" type="audio/mpeg">
-          </audio>
+    <div class="icon-container">
+      <audio id="audioPlayer" class="icon-container" style="display:none;">
+          <source src="Bon Entendeur vs Tina Charles - I Love To Love (Audio).mp3" type="audio/mpeg">
+      </audio>
 
-          <div id="playButton">
-            <i id="playIcon" class="fa-solid fa-circle-play" style="color: #b85747;"></i>
-          </div>
+      <div id="playButton" style="background-color: #b85747; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 10px;">
+          <i id="playIcon" class="fas fa-music" style="color: white; font-size: 25px;"></i>
+      </div>
 
-          <script>
-            var audioPlayer = document.getElementById('audioPlayer');
-            var playButton = document.getElementById('playButton');
-            var playIcon = document.getElementById('playIcon');
+      <script>
+          var audioPlayer = document.getElementById('audioPlayer');
+          var playButton = document.getElementById('playButton');
+          var playIcon = document.getElementById('playIcon');
 
-            playButton.addEventListener('click', function() {
-                if (audioPlayer.paused) {
-                    audioPlayer.play();
-                    playIcon.className = 'fa-solid fa-circle-pause';
-                } else {
-                    audioPlayer.pause();
-                    playIcon.className = 'fa-solid fa-circle-play';
-                }
-            });
-          </script>
+          playButton.addEventListener('click', function() {
+              if (audioPlayer.paused) {
+                  audioPlayer.play();
+                  playIcon.className = 'fas fa-pause';
+              } else {
+                  audioPlayer.pause();
+                  playIcon.className = 'fas fa-music';
+              }
+          });
+      </script>
 
-        </div>
+  </div>
+
+
+
+
 
         <div class="section2-container scroll-animate" id="wedding-day">
             <div class="left-section2">
