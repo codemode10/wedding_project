@@ -249,6 +249,16 @@ color: #b85747;
   cursor: pointer;
 }
 
+label, button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 
 
 .top-button:hover {
