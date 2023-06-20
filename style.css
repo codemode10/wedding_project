@@ -650,7 +650,7 @@ box-shadow: 5px 5px;
 
   .banner-h1 {
     font-size: 2rem;
-    margin-top: 30px;
+    margin-top: 10px;
     color: #b85747;
     }
 
@@ -744,6 +744,7 @@ box-shadow: 5px 5px;
   height: auto;
   border-radius: 30px;
   padding: 30px;
+  padding: 60px;
   border: none;
   box-shadow: 7px 7px #ff9888;
 }
@@ -753,8 +754,6 @@ box-shadow: 5px 5px;
   text-align: center;
   padding-left: 0;
 }
-
-
 
 .right-section3 {
   display: flex;
@@ -774,6 +773,7 @@ box-shadow: 5px 5px;
   flex-direction: column;
   border-radius: 30px;
   padding: 30px;
+  padding-bottom: 60px;
   border: 1px solid #b85747;
   height: auto;
   box-shadow: 7px 7px #ff9888;
