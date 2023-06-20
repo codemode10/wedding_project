@@ -20,8 +20,8 @@ const typeText = (elementId, text, speed, callback) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  typeText('typing-h1', 'Bienvenue au mariage de Mathilde & Lloyd', 80, () => {
-    typeText('typing-h2', 'Le 15 septembre 2023', 80)
+  typeText('typing-h1', 'Bienvenue au mariage de Mathilde & Lloyd', 60, () => {
+    typeText('typing-h2', 'Le 15 septembre 2023', 60)
   });
 
 });

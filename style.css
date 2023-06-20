@@ -128,27 +128,27 @@ margin-bottom: 3vh;
 }
 
 .line-up:nth-child(1) {
-  animation-delay: 6s;
+  animation-delay: 4.5s;
 }
 
 .line-up:nth-child(2) {
-  animation-delay: 6.1s;
+  animation-delay: 4.6s;
 }
 
 .line-up:nth-child(3) {
-  animation-delay: 6.2s;
+  animation-delay: 4.7s;
 }
 
 .line-up:nth-child(4) {
-  animation-delay: 6.3s;
+  animation-delay: 4.8s;
 }
 
 .line-up:nth-child(5) {
-  animation-delay: 6.4s;
+  animation-delay: 4.9s;
 }
 
 .line-up:nth-child(6) {
-  animation-delay: 6.5s;
+  animation-delay: 5s;
 }
 
 @keyframes float-up {

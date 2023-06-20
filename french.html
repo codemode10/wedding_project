@@ -1,55 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Website - Home</title>
-    <meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/b42a696e69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
+
     <div class="page-container">
 
         <div class="section1-container">
             <h1 class="banner-h1" id="typing-h1"></h1>
-            <h2 class="bannerh2" id="typing-h2"></h2>
+            <h2 class="banner-h2" id="typing-h2"></h2>
             <div class="button-group">
-              <a href="#wedding-day" class="top-button line-up">Mariage</a>
-              <a href="#day-after" class="top-button line-up">Rebond</a>
-              <a href="#RSVP" class="top-button line-up">Confirmer ma présence</a>
-              <a href="#RSVP" class="top-button line-up">Venir & où dormir?</a>
-              <a href="#travel-provence" class="top-button line-up">Visiter la région</a>
+              <a href="#wedding-day" class="top-button line-up">Programme</a>
+              <a href="#RSVP" class="top-button line-up">RSVP</a>
+              <a href="#travel-provence" class="top-button line-up">Où dormir?</a>
+              <a href="#gifts" class="top-button line-up">Liste de mariage</a>
               <a href="#Image Upload" class="top-button line-up">Album photo</a>
-              <a href="#gifts" class="top-button line-up">🎁</a>
             </div>
-        </div>p
-
-
-        <div class="icon-container">
-            <i class="fa-solid fa-circle-down fa-beat"></i>
         </div>
 
-        <div class="section2-container" id="wedding-day">
+        <div class="icon-container">
+          <audio id="audioPlayer" class="icon-container" style="display:none;">
+              <source src="Bon Entendeur vs Tina Charles - I Love To Love (Audio).mp3" type="audio/mpeg">
+          </audio>
+
+          <div id="playButton" style="background-color: #b85747; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 10px;">
+              <i id="playIcon" class="fas fa-music" style="color: white; font-size: 25px;"></i>
+          </div>
+
+          <script>
+              var audioPlayer = document.getElementById('audioPlayer');
+              var playButton = document.getElementById('playButton');
+              var playIcon = document.getElementById('playIcon');
+
+              playButton.addEventListener('click', function() {
+                  if (audioPlayer.paused) {
+                      audioPlayer.play();
+                      playIcon.className = 'fas fa-pause';
+                  } else {
+                      audioPlayer.pause();
+                      playIcon.className = 'fas fa-music';
+                  }
+              });
+          </script>
+
+      </div>
+
+
+
+
+        <div class="section2-container scroll-animate" id="wedding-day">
             <div class="left-section2">
                 <img class="img2" src="images/1.svg" alt="image of church">
             </div>
             <div class="right-section2">
-                <h1 class="h1-red">Le jour J, Vendredi 15 Septembre </h1>
-                <p class="p-red"><b>16h:</b> Célébration à l'église Notre-Dame, Saint-Cannat 13760, Provence</p>
-                <p class="p-red"><b>À partir de 17h45:</b> Cocktail </p>
-                <p class="p-red"><b>20h30-6h:</b> Dîner & fiestaaa </p>
-                <p class="p-red"><b>Lieu:</b> La Bergerie, 1315 chemin de l'Arénier 13760 Saint-Cannat</p>
+                <h1>Le jour J, Vendredi 15 Septembre </h1>
+                <p><b>16 heures:</b> Célébration à l'église Notre-Dame de Vie, Saint-Cannat 13760</p>
+                <a href="https://goo.gl/maps/4aYe4jX77y3thkgC9" class="top-button" target="_blank">Église</a>
+                <p><b>Dès 17h45:</b> Cocktail suivi du dîner à La Bergerie </p>
+
+                <a class="top-button" href="https://goo.gl/maps/rNcdZcRrm251Ys2t8" target="_blank">La Bergerie</a>
+                <br>
+                <p><b>Comment venir?</b> Gare Aix-en-Provence TGV ou aéroport de Marseille puis besoin de louer une voiture. </p>
+                <p> Pensez au co-voiturage 🙂</p>
+
+
             </div>
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">☝ accueil</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">☝ top</button>
 
-        <div class="section3-container" id="day-after">
+        <div class="section3-container scroll-animate" id="day-after">
             <div class="left-section3">
-                <h1 class="h1-red">Rebond, Samedi 16 Septembre </h1>
-                <p class="p-red">La Bergerie, 1315 Chemin de l'Arénier 13760 Saint-Cannat</p>
-                <p class="p-red">Vous êtes les bienvenus <b>à partir de 13h</b> pour bruncher et profiter de la piscine, participer au tournoi de pétanque et autres... N'oubliez pas votre maillot de bain!
-                On continuera les festivités le soir pour les plus vaillants avec au menu un BBQ "Braii" Sud-africain et toujours de la musique évidemment!
+                <h1>Rebond, Samedi 16 Septembre</h1>
+                <p>Vous êtes les bienvenus <b>à partir de 13h</b> pour bruncher et profiter de la piscine, participer au tournoi de pétanque et autres... N'oubliez pas votre maillot de bain!
+                  <br>
+                  <br>
+                  <p>On continuera les festivités le soir pour les plus vaillants avec au menu un BBQ "Braii" Sud-africain et toujours de la musique évidemment!
                 </p>
             </div>
             <div class="right-section3">
@@ -57,127 +94,71 @@
             </div>
         </div>
 
-        <div class="section5-container " id="RSVP">
+        <div class="section5-container scroll-animate" id="RSVP">
             <div class="left-section5">
-                <h1 class="h1-red">Confirmez votre présence </h1>
-                <p class="p-red"> Merci de nous confirmer votre présence avant le 30 juin et de nous indiquer vos potentielles allergies/intolérances alimentaires en cliquant sur ce lien</p> <a class="top-button custom-rsvp" href="https://docs.google.com/forms/d/e/1FAIpQLSelJLeE79EdF7mvr--MH6ABviRgEbktoQKv1ucwdnBKvN9UbQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Confirmez votre présence</a>
+                <h1>RSVP </h1>
+                <p class="p-red"> Merci de nous confirmer votre présence avant fin juillet et de nous indiquer vos potentielles allergies/intolérances alimentaires.</p>
+                <a class="top-button custom-rsvp" href="https://docs.google.com/forms/d/e/1FAIpQLSelJLeE79EdF7mvr--MH6ABviRgEbktoQKv1ucwdnBKvN9UbQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Confirmer ma présence</a>
             </div>
             <div class="right-section5">
                 <img class="img5" src="images/4.svg" alt="">
             </div>
         </div>
 
-        <div class="section10-container" id="day-after">
-            <div class="left-section10">
-                <h1 class="h1-red">Où dormir? </h1>
-                <p class="p-red">Vous avez la possibilité de planter votre tente dans le jardin pour profiter jusqu'au bout de la nuit 💃🏽</p>
-                <p class="p-red">Sinon, voici une sélection de lieux autour de la Bergerie:</p>
-                <a class="mapbutton" href="https://goo.gl/maps/sK9XQXvZUMWbmn949" target="_blank">Hébergements 🏠</a>
-            </div>
-            <div class="right-section10">
-                <img class="img3" src="images/2.svg" alt="">
-            </div>
+        <div class="section3-container scroll-animate" id="day-after">
+          <div class="left-section3">
+              <h1>Où dormir?</h1>
+              <p>Vous avez la possibilité de planter votre tente dans le jardin vendredi & samedi pour profiter jusqu'au bout de la nuit 💃🏽
+              <p>Sinon, voici une sélection de lieux autour de la Bergerie:
+              </p>
+              <a class="top-button" href="https://docs.google.com/spreadsheets/d/1bNkRbdaiswrw9YPDJGuow4hud9Vcs1fe/edit?fbclid=IwAR1r_5pN4WtBq6_lZsTJagr06nUOKr1BdlL3Qbh5UFZDy_zJcnZG-wRwQts#gid=1287700188" target="_blank">Hébergements 🏠</a>
+          </div>
+          <div class="right-section3">
+              <img class="img30" src="images/Tent.svg" alt="">
+          </div>
+      </div>
+
+      <div class="section4-container scroll-animate">
+        <div class="left-section4">
+            <img class="img4" src="images/3.svg" alt="">
         </div>
+        <div class="right-section4" id="gifts">
+            <h1>Liste de mariage </h1>
+            <br>
+            <a href="https://www.millemercismariage.com/mathildelloyd/liste.html" class="top-button line-up" target="_blank">🎁</a>
 
-        <div class="section6-container" id="travel-provence">
-            <h1 class="h1-red">Visitez la région </h1>
-            <p class="p-red">Voici une petit liste de villes & villages à visiter aux alentours si vous avez un peu de temps avant et/ou après. </p>
-            <div class="traveldiv1">
-                <div class="left-section6">
-                    <img class="img6" src="images/Baux-de-Provence.webp" alt="">
-                </div>
-                <div class="right-section6">
-                    <h1 class="h1-red">Les Baux-de-Provence</h1>
-                    <p class="p-red">Petit village dominé par le Château des Baux, avec vue magnifique sur les plaines et possibilité de visiter les Carrières de Lumière. Un petit peu loin de Saint-Cannat mais vaut vraiment le coup! </p>
-                    <a class="mapbutton" href="https://goo.gl/maps/uZ1VhfKz58rDNK6i7" target="_blank">Open maps</a>
-                </div>
-            </div>
-            <div class="traveldiv2">
-                <div class="left-section7">
-                    <h1>Gordes </h1>
-                    <p class="p-red">L'un des plus beaux villages de France, perché au sommet d'une colline, on recommande ! </p>
-                    <a class="mapbutton" href="https://goo.gl/maps/u2S9eJtntYvzqwjZ9" target="_blank">Open maps</a>
-                </div>
-                <div class="right-section7">
-                    <img class="img6" src="images/vacances_gordes.jpg" alt="">
-                </div>
-            </div>
-            <div class="traveldiv3">
-                <div class="left-section-travel-3">
-                    <img class="img6" src="images/Lourmarin.jpeg" alt="">
-                </div>
-                <div class="right-section-travel-3">
-                    <h1 class="h1-red">Lourmarin</h1>
-                    <p class="p-red">L'un des plus beaux villages du Luberon, as "one of the most beautiful villages in France", Lourmarin nestles in the middle of vineyards, olive groves and almond trees. Lourmarin has been settled for at least a thousand years, and was a Neolithic campsite before that. A fortress was first built at the site in the 12th century, and was rebuilt by Foulques d'Agoult in the 15th century on the foundations of the earlier castle. Close to Mathilde's house </p>
-                    <a class="mapbutton" href="https://goo.gl/maps/sK9XQXvZUMWbmn949" target="_blank">Open maps</a>
-                </div>
-            </div>
-            <div class="traveldiv4">
-                <div class="left-section-travel-4">
-                    <h1>Bonnieux</h1>
-                    <p class="p-red">Beautiful 12th century church on top of a hill in a stunning little village. This is one of my favourite villages in the area.</p>
-                    <a class="mapbutton" href="https://goo.gl/maps/kT74eusfx8quufZt7" target="_blank">Open maps</a>
-                </div>
-                <div class="right-section-travel-4">
-                    <img class="img6" src="images/Bonnieux.jpeg" alt="">
-                </div>
-            </div>
-            <div class="traveldiv5">
-                <div class="left-section-travel-5">
-                    <img class="img6" src="images/aix.jpeg" alt="">
-                </div>
-                <div class="right-section-travel-5">
-                    <h1 class="h1-red">Aix-en-Provence </h1>
-                    <p class="p-red">Aix-en-Provence is the capital of the region and a university town in the Provence-Alpes-Côte d'Azur region of southern France. It was the birthplace of Post-Impressionist painter Paul Cézanne. Try and visit Aix during the Saturday markets.</p>
-                    <a class="mapbutton" href="https://goo.gl/maps/vgMP7WwxG9MScaDA9" target="_blank">Open maps</a>
-                </div>
-            </div>
-            <div class="traveldiv6">
-                <div class="left-section-travel-6">
-                    <h1>Marseille </h1>
-                    <p class="p-red">Marseille, a port city, is France's 2nd largest city. It has been the crossroads of immigration and trade since its founding by the Greeks circa 600 B.C. The best two areas are Le Panier and Vallon des Auffes. Le Panier is a beautiful old artsy area with great restaurants and bars. Vallon des Auffes is an amazing place to go for a sunset drink or to eat in the few restaurants lined along the shore.</p>
-                    <a class="mapbutton" href="https://goo.gl/maps/RqXUJ7nr6AG5h3So7" target="_blank">Open maps</a>
-                </div>
-                <div class="right-section-travel-6">
-                    <img class="img6" src="images/des auffes.jpeg" alt="">
-                </div>
-            </div>
         </div>
-
-        <div class="section3-container" id="Image Upload">
-            <div class="left-section3">
-                <h1 class="h1-red">Album photo</h1>
-                <p class="p-red">N'hésitez pas à nous partager vos plus belles photos & vidéos du week-end ici pour que tout le monde puisse y avoir accès facilement 🙂</p>
-                <div class="upload-div">
-                    <div class="input-wrapper">
-                        <input class="choose-files" type="file" id="file-input" accept="image/*" multiple>
-                        <label for="file-input" class="top-button file-label">Choisir le fichier</label>
-                    </div>
-                    <button class="upload top-button" onclick="uploadImage()">Importer</button>
-                    <div id="file-message"></div>
-                </div>
-            </div>
-
-            <div class="right-section3">
-                <img class="img10" src="images/pics.svg" alt="">
-            </div>
-        </div>
-        <div class="section4-container">
-            <div class="left-section4">
-                <img class="img4" src="images/3.svg" alt="">
-            </div>
-            <div class="right-section4" id="gifts">
-                <h1 class="h1-red">Liste de mariage </h1>
-                <p class="p-red"> </p>
-            </div>
-        </div>
+    </div>
 
 
 
-        <footer>
-            <p>&copy; 2023 Bay Web Creative</p>
+
+        <div class="section3-container scroll-animate" id="Image Upload">
+          <div class="left-section3">
+              <h1>Album photo </h1>
+              <p class="p-red">N'hésitez pas à nous partager vos plus belles photos & vidéos du week-end ici pour que tout le monde puisse y avoir accès facilement 🙂</p>
+              <div class="upload-div">
+                  <div class="input-wrapper">
+                      <input class="choose-files" type="file" id="file-input" accept="image/*" multiple>
+                      <label for="file-input" class="top-button file-label">Sélectionner</label>
+                  </div>
+                  <button class="upload top-button" onclick="uploadImage()">Importer</button>
+                  <div id="file-message"></div>
+              </div>
+          </div>
+
+          <div class="right-section3">
+              <img class="img10" src="images/pics.svg" alt="">
+          </div>
+      </div>
+
+        <footer class="footer-container">
+            <p class="footer"> Webstie by the Groom - Find me here on <a href="https://github.com/codemode10" target="_blank">github</a> &nbsp;<i class="fa-brands fa-github fa-shake github-icon" style="color: #b36a5e;"></i></p>
         </footer>
     </div>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.11.4/cloudinary-core-shrinkwrap.min.js"></script>
     <script src="script.js"></script>
 
