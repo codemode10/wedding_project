@@ -30,7 +30,7 @@ body {
 
 .icon-container {
   opacity: 0; /* Initially hidden */
-  animation: fadeIn 1s ease-in 7s forwards;
+  animation: fadeIn 1s ease-in 5.2s forwards;
   height: auto;
   display: flex;
   justify-content: center;
