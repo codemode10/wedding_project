@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="normalize.css">
 	  <link rel="stylesheet" type="text/css" href="style.css">
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/b42a696e69.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,76 +14,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="page-container">
-
-      <div class="section1-container">
-
-
-        <h1 class="banner-h1" id="typing-h1"></h1>
-        <h2 class="banner-h2" id="typing-h2"></h2>
-        <div class="button-group">
-            <a href="#wedding-day" class="top-button line-up">Wedding Day</a>
-            <a href="#day-after" class="top-button line-up">Day after</a>
-            <a href="#RSVP" class="top-button line-up">RSVP</a>
-            <a href="#travel-provence" class="top-button line-up">Travel Provence</a>
-            <a href="#Image Upload" class="top-button line-up">Image Upload</a>
-            <a href="#gifts" class="top-button line-up">Gifts</a>
-        </div>
+  <div class="page-container">
+    <div class="section1-container">
+      <h1 class="banner-h1" id="typing-h1"></h1>
+      <h2 class="banner-h2" id="typing-h2"></h2>
+      <div class="button-group">
+        <a href="#wedding-day" class="top-button line-up">Wedding Day</a>
+        <a href="#day-after" class="top-button line-up">Day after</a>
+        <a href="#RSVP" class="top-button line-up">RSVP</a>
+        <a href="#travel-provence" class="top-button line-up">Travel Provence</a>
+        <a href="#Image Upload" class="top-button line-up">Image Upload</a>
+        <a href="#gifts" class="top-button line-up">Gifts</a>
+      </div>
     </div>
-
-
-
     <div class="icon-container">
       <audio id="audioPlayer" class="icon-container" style="display:none;">
           <source src="y2mate.is - France Gall - Ella elle l a Remastered Audio HQ-cep3NX5gnmY-192k-1687343239.mp3" type="audio/mpeg">
       </audio>
-
       <div id="playButton" style="background-color: #b85747; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 10px;">
           <i id="playIcon" class="fas fa-music" style="color: white; font-size: 25px;"></i>
       </div>
-
-      <script>
-          var audioPlayer = document.getElementById('audioPlayer');
-          var playButton = document.getElementById('playButton');
-          var playIcon = document.getElementById('playIcon');
-
-          playButton.addEventListener('click', function() {
-              if (audioPlayer.paused) {
-                  audioPlayer.play();
-                  playIcon.className = 'fas fa-pause';
-              } else {
-                  audioPlayer.pause();
-                  playIcon.className = 'fas fa-music';
-              }
-          });
-      </script>
-
-  </div>
-
-
-
-
-
-        <div class="section2-container scroll-animate" id="wedding-day">
-            <div class="left-section2">
-                <img class="img2" src="images/1.svg" alt="image of church">
-            </div>
-            <div class="right-section2">
-                <h1>Wedding Day, Friday 15th Sept </h1>
-                <p><b>4pm</b> Ceremony at the church - Notre-Dame de Vie in Saint-Cannat </p>
-                <a href="https://goo.gl/maps/4aYe4jX77y3thkgC9" class="top-button">Church Map</a>
-                <br>
-                <br>
-                <p><b>5:45pm</b> Reception at La Bergerie. Remember French weddings go late so strap-in </p>
-                <a href="https://goo.gl/maps/C34oebRuiV31iz3E7" class="top-button">La Bergerie Map</a>
-                <br>
-                <br>
-                <p>The closest train station is Aix-En-Provence <b>TGV</b> (not the city centre station) and the nearest airport is Marseille. </p>
-                <p>You will need a car to get around as Saint-Cannat is a small village with sporadic public transport.</p>
-            </div>
+    </div>
+    <div class="section2-container scroll-animate" id="wedding-day">
+        <div class="left-section2">
+            <img class="img2" src="images/1.svg" alt="image of church">
         </div>
-
+        <div class="right-section2">
+            <h1>Wedding Day, Friday 15th Sept </h1>
+            <p><b>4pm</b> Ceremony at the church - Notre-Dame de Vie in Saint-Cannat </p>
+            <a href="https://goo.gl/maps/4aYe4jX77y3thkgC9" class="top-button">Church Map</a>
+            <br>
+            <br>
+            <p><b>5:45pm</b> Reception at La Bergerie. Remember French weddings go late so strap-in </p>
+            <a href="https://goo.gl/maps/C34oebRuiV31iz3E7" class="top-button">La Bergerie Map</a>
+            <br>
+            <br>
+            <p>The closest train station is Aix-En-Provence <b>TGV</b> (not the city centre station) and the nearest airport is Marseille. </p>
+            <p>A car is recommended to get around as Saint-Cannat is a small village with sporadic public transport.</p>
+        </div>
+      </div>
         <div class="section3-container scroll-animate" id="day-after">
             <div class="left-section3">
                 <h1>Brunch & Pool Party, Saturday 16th Sept </h1>
@@ -96,17 +62,15 @@
                 <br>
                 <a href="https://goo.gl/maps/C34oebRuiV31iz3E7" class="top-button">La Bergerie Map</a>
                 <br>
-
             </div>
             <div class="right-section3">
                 <img class="img3" src="images/2.svg" alt="">
             </div>
         </div>
-
         <div class="section5-container scroll-animate" id="RSVP">
             <div class="left-section5">
                 <h1>RSVP </h1>
-                <p> Please confirm your presence by the end of July by cliking here</p>
+                <p> Please confirm your presence by the end of July by clicking here</p>
                 <a class="top-button custom-rsvp" href="https://docs.google.com/forms/d/e/1FAIpQLSelJLeE79EdF7mvr--MH6ABviRgEbktoQKv1ucwdnBKvN9UbQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">RSVP</a>
             </div>
             <div class="right-section5">
@@ -153,10 +117,9 @@
             </div>
             <div class="right-section4" id="gifts">
                 <h1>Gift Registry </h1>
-                <p>If you would like to contribute to our wedding registry you can do so at the following link. If you have travelled via aeroplane your presence already means so much to us x </p>
+                <p>If you would like to contribute to our wedding registry you can do so at the following link. If you have travelled via aeroplane your presence already means so much to us.</p>
                 <br>
                 <a href="https://www.millemercismariage.com/mathildelloyd/liste.html" class="top-button" target="_blank">Gift registry</a>
-
             </div>
         </div>
 
@@ -165,12 +128,23 @@
             <p>Weddings in France are slightly different to English weddings. In France, weddings comprise of two parts, the civil and the religious ceremony. The civil part takes place in the town hall, which is the only place you can be legally married in France. Marriage celebrants are not a thing here as they hold no legal powers like they do in Australia etc. Couples can chose to do the civil part the morning of or months before, as we did last November in Paris. The second part, the religious ceremony is the main wedding where the usual traditions take place including the reception, and this will be the part taking place on September 15th.</p>
         </div>
         <footer class="footer-container">
-            <p class="footer"> Website by the Groom - Find me here on <a href="https://github.com/codemode10">github</a> &nbsp;<i class="fa-brands fa-github fa-shake github-icon" style="color: #b36a5e;"></i></p>
+            <p class="footer"> Website designed by the Groom - Find me here on <a href="https://github.com/codemode10">github</a> &nbsp;<i class="fa-brands fa-github fa-shake github-icon" style="color: #b36a5e;"></i></p>
         </footer>
-    </div>
-
-
-
+  </div>
+  <script>
+    var audioPlayer = document.getElementById('audioPlayer');
+    var playButton = document.getElementById('playButton');
+    var playIcon = document.getElementById('playIcon');
+    playButton.addEventListener('click', function() {
+      if (audioPlayer.paused) {
+          audioPlayer.play();
+          playIcon.className = 'fas fa-pause';
+      } else {
+          audioPlayer.pause();
+          playIcon.className = 'fas fa-music';
+      }
+    });
+  </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.11.4/cloudinary-core-shrinkwrap.min.js"></script>
     <script src="english.js"></script>
 
