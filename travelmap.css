@@ -10,7 +10,7 @@ body {
 #map {
   position: relative;
   width: 50vw; /* substracting 2rem to accommodate the padding */
-  height: 60vh;
+  height: 50vh;
   padding: 1rem;
   border-radius: 20px; /* adjust as needed */
   margin: auto; /* centers the map horizontally */
@@ -278,7 +278,7 @@ box-shadow: 8px 8px #b36a5e;
 
 #map {
   width: 90%;
-  height: 60vh;
+  height: 50vh;
   padding: 1rem;
   border-radius: 20px; /* adjust as needed */
   margin: auto; /* centers the map horizontally */
