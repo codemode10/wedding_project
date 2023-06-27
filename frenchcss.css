@@ -279,10 +279,11 @@ label, button {
   justify-content: space-between;
   border-radius: 20px;
   padding: 30px;
-  height: 60vh;
   background-color: #B85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .left-section2 {
@@ -305,11 +306,12 @@ label, button {
   justify-content: space-between;
   border-radius: 20px;
   padding: 30px;
-  height: 60vh;
   border: 2px solid #b85747;
   background-color: #b85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .left-section3 {
@@ -340,11 +342,12 @@ label, button {
   justify-content: space-between;
   border-radius: 20px;
   padding: 30px;
-  height: 50vh;
   border: 2px solid #b85747;
   background-color: #b85747;
   margin-bottom: 5vh;
   box-shadow: 7px 7px #ff9888;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .section14-container {
@@ -607,7 +610,7 @@ margin-left: 50px;
 }
 
 .img3 {
-max-width: 57%;
+max-width: 50%;
 height: auto;
 float: right;
 margin-right: 25px;
