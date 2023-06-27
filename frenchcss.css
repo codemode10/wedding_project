@@ -321,6 +321,17 @@ label, button {
   padding-left: 5%;
 }
 
+.left-section33 {
+  flex-basis: 50%;
+  margin-right: 5%;
+  margin: auto;
+  color: #b85747;
+  text-align: left;
+  padding-left: 5%;
+}
+
+
+
 .right-section3 {
   flex-basis: 50%;
   margin: auto;
