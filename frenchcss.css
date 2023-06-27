@@ -763,7 +763,17 @@ box-shadow: 5px 5px;
   margin: 0;
   text-align: center;
   padding-left: 0;
+  margin-bottom: 15px;
 }
+
+.left-section33 {
+  margin: 0;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+
 
 .right-section3 {
   display: flex;
@@ -987,7 +997,7 @@ font-size: 2rem;
 }
 
 .img30 {
-  max-width: 60%;
+  max-width: 55%;
   margin-right: 0px;
   }
 
