@@ -369,9 +369,13 @@ label, button {
   flex-basis: 50%;
   margin-right: 5%;
   margin: auto;
-  color: #b85747;
+  color: white;
   text-align: left;
   padding-left: 5%;
+}
+
+#file-message {
+  margin-left: 20px;
 }
 
 .right-section33 {
@@ -1098,6 +1102,10 @@ font-size: 2rem;
 .img30 {
   max-width: 70%;
   margin-right: 0px;
+  }
+
+  #file-message {
+    margin-left: 15px;
   }
 
 }

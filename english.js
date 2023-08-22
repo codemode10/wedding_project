@@ -1,23 +1,4 @@
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  // Check if the viewport width is more than 768px (common breakpoint for desktop screens)
-  if (window.matchMedia("(min-width: 1000px)").matches) {
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-      document.getElementById("myBtn").style.display = "block";
-    } else {
-      document.getElementById("myBtn").style.display = "none";
-    }
-  } else {
-    // If it's less (mobile view), keep the button hidden
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
 // Rest of your code...
 
@@ -85,6 +66,21 @@ function uploadImages(files, onProgress) {
     xhr.send(formData);
   });
 }
+
+function handleFileSelection() {
+  const input = document.getElementById('file-input');
+  const files = input.files;
+  const fileMessage = document.getElementById('file-message');  // Assuming you have an element to display messages
+
+  if (!files || files.length === 0) {
+    fileMessage.textContent = 'No images selected';
+  } else {
+    fileMessage.textContent = `Selected ${files.length} image(s)`;
+  }
+}
+
+document.getElementById('file-input').addEventListener('change', handleFileSelection);
+
 
 function uploadImage() {
   const input = document.getElementById('file-input');
