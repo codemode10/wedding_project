@@ -35,11 +35,17 @@ function uploadImages(files, onProgress) {
     uploads.push(new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
       const formData = new FormData();
+      let endpoint = "image"; // Default to image endpoint
 
       formData.append('file', files[i]);
       formData.append('upload_preset', 'z3hrqghk');
 
-      xhr.open('POST', `https://api.cloudinary.com/v1_1/${cloudinaryInstance.config().cloud_name}/image/upload`, true);
+      // Check if the file type is video
+      if (files[i].type.startsWith('video/')) {
+        endpoint = "video";
+      }
+
+      xhr.open('POST', `https://api.cloudinary.com/v1_1/${cloudinaryInstance.config().cloud_name}/${endpoint}/upload`, true);
 
       xhr.upload.onprogress = (event) => {
         if (onProgress) {
@@ -50,17 +56,17 @@ function uploadImages(files, onProgress) {
       xhr.onload = () => {
         if (xhr.status === 200) {
           const data = JSON.parse(xhr.responseText);
-          console.log('Image uploaded successfully:', data);
+          console.log('File uploaded successfully:', data);
           resolve(data);
         } else {
-          console.error('Error uploading image:', xhr.statusText);
-          reject(new Error('Failed to upload image'));
+          console.error('Error uploading file:', xhr.statusText);
+          reject(new Error('Failed to upload file'));
         }
       };
 
       xhr.onerror = () => {
-        console.error('Error uploading image:', xhr.statusText);
-        reject(new Error('Failed to upload image'));
+        console.error('Error uploading file:', xhr.statusText);
+        reject(new Error('Failed to upload file'));
       };
 
       xhr.send(formData);
@@ -69,6 +75,7 @@ function uploadImages(files, onProgress) {
 
   return Promise.all(uploads);
 }
+
 
 
 function handleFileSelection() {
