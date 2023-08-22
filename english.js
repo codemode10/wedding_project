@@ -84,9 +84,9 @@ function handleFileSelection() {
   const fileMessage = document.getElementById('file-message');  // Assuming you have an element to display messages
 
   if (!files || files.length === 0) {
-    fileMessage.textContent = 'No images selected';
+    fileMessage.textContent = 'No files selected';
   } else {
-    fileMessage.textContent = `Selected ${files.length} image(s)`;
+    fileMessage.textContent = `Selected ${files.length} file(s)`;
   }
 }
 
@@ -99,24 +99,24 @@ function uploadImage() {
   const fileMessage = document.getElementById('file-message');
 
   if (!files || files.length === 0) {
-    alert('Please select at least one image file to upload');
+    alert('Please select at least one file to upload');
     return;
   }
 
 
-  fileMessage.textContent = `Uploading ${files.length} image(s)...`;
+  fileMessage.textContent = `Uploading ${files.length} file(s)...`;
 
 
   uploadImages(files, (loaded, total) => {
     console.log(`Uploaded ${loaded} of ${total} bytes`);
   })
     .then(() => {
-      alert('Images uploaded successfully!');
+      alert('Files uploaded successfully!');
 
       fileMessage.textContent = '';
     })
     .catch(() => {
-      alert('Error uploading images');
+      alert('Error uploading files, go and speak to Lloyd');
 
       fileMessage.textContent = '';
     });

@@ -37,11 +37,17 @@ function uploadImages(files, onProgress) {
     uploads.push(new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
       const formData = new FormData();
+      let endpoint = "image"; // Default to image endpoint
 
       formData.append('file', files[i]);
       formData.append('upload_preset', 'z3hrqghk');
 
-      xhr.open('POST', `https://api.cloudinary.com/v1_1/${cloudinaryInstance.config().cloud_name}/image/upload`, true);
+      // Check if the file type is video
+      if (files[i].type.startsWith('video/')) {
+        endpoint = "video";
+      }
+
+      xhr.open('POST', `https://api.cloudinary.com/v1_1/${cloudinaryInstance.config().cloud_name}/${endpoint}/upload`, true);
 
       xhr.upload.onprogress = (event) => {
         if (onProgress) {
@@ -52,17 +58,17 @@ function uploadImages(files, onProgress) {
       xhr.onload = () => {
         if (xhr.status === 200) {
           const data = JSON.parse(xhr.responseText);
-          console.log('Image uploaded successfully:', data);
+          console.log('File uploaded successfully:', data);
           resolve(data);
         } else {
-          console.error('Error uploading image:', xhr.statusText);
-          reject(new Error('Failed to upload image'));
+          console.error('Error uploading file:', xhr.statusText);
+          reject(new Error('Failed to upload file'));
         }
       };
 
       xhr.onerror = () => {
-        console.error('Error uploading image:', xhr.statusText);
-        reject(new Error('Failed to upload image'));
+        console.error('Error uploading file:', xhr.statusText);
+        reject(new Error('Failed to upload file'));
       };
 
       xhr.send(formData);
@@ -73,15 +79,16 @@ function uploadImages(files, onProgress) {
 }
 
 
+
 function handleFileSelection() {
   const input = document.getElementById('file-input');
   const files = input.files;
   const fileMessage = document.getElementById('file-message');  // Assuming you have an element to display messages
 
   if (!files || files.length === 0) {
-    fileMessage.textContent = 'No images selected';
+    fileMessage.textContent = 'No files selected';
   } else {
-    fileMessage.textContent = `Selected ${files.length} image(s)`;
+    fileMessage.textContent = `Selected ${files.length} file(s)`;
   }
 }
 
@@ -94,12 +101,12 @@ function uploadImage() {
   const fileMessage = document.getElementById('file-message');
 
   if (!files || files.length === 0) {
-    alert('Please select at least one image file to upload');
+    alert('Please select at least one file file to upload');
     return;
   }
 
 
-  fileMessage.textContent = `Uploading ${files.length} image(s)...`;
+  fileMessage.textContent = `Uploading ${files.length} file(s)...`;
 
 
   uploadImages(files, (loaded, total) => {
@@ -111,7 +118,7 @@ function uploadImage() {
       fileMessage.textContent = '';
     })
     .catch(() => {
-      alert('Error uploading images');
+      alert('Error uploading files');
 
       fileMessage.textContent = '';
     });
