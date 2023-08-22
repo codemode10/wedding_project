@@ -93,6 +93,11 @@ margin-bottom: 3vh;
   text-align: center;
 }
 
+#file-message {
+  margin-left: 20px;
+  color: white;
+}
+
 .choose-files {
   display: none;
 }
@@ -1011,6 +1016,11 @@ font-size: 2rem;
 .img30 {
   max-width: 55%;
   margin-right: 0px;
+  }
+
+  #file-message {
+    margin-left: 15px;
+    color: white;
   }
 
 }

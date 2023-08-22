@@ -29,43 +29,47 @@ document.addEventListener('DOMContentLoaded', () => {
 var cloudinaryInstance = cloudinary.Cloudinary.new({ cloud_name: 'degbra6ra' });
 
 function uploadImages(files, onProgress) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    const formData = new FormData();
+  let uploads = [];
 
-    for (let i = 0; i < files.length; i++) {
+  for (let i = 0; i < files.length; i++) {
+    uploads.push(new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      const formData = new FormData();
+
       formData.append('file', files[i]);
-    }
+      formData.append('upload_preset', 'z3hrqghk');
 
-    formData.append('upload_preset', 'z3hrqghk');
+      xhr.open('POST', `https://api.cloudinary.com/v1_1/${cloudinaryInstance.config().cloud_name}/image/upload`, true);
 
-    xhr.open('POST', `https://api.cloudinary.com/v1_1/${cloudinaryInstance.config().cloud_name}/image/upload`, true);
+      xhr.upload.onprogress = (event) => {
+        if (onProgress) {
+          onProgress(event.loaded, event.total);
+        }
+      };
 
-    xhr.upload.onprogress = (event) => {
-      if (onProgress) {
-        onProgress(event.loaded, event.total);
-      }
-    };
+      xhr.onload = () => {
+        if (xhr.status === 200) {
+          const data = JSON.parse(xhr.responseText);
+          console.log('Image uploaded successfully:', data);
+          resolve(data);
+        } else {
+          console.error('Error uploading image:', xhr.statusText);
+          reject(new Error('Failed to upload image'));
+        }
+      };
 
-    xhr.onload = () => {
-      if (xhr.status === 200) {
-        const data = JSON.parse(xhr.responseText);
-        console.log('Image uploaded successfully:', data);
-        resolve(data);
-      } else {
+      xhr.onerror = () => {
         console.error('Error uploading image:', xhr.statusText);
         reject(new Error('Failed to upload image'));
-      }
-    };
+      };
 
-    xhr.onerror = () => {
-      console.error('Error uploading image:', xhr.statusText);
-      reject(new Error('Failed to upload image'));
-    };
+      xhr.send(formData);
+    }));
+  }
 
-    xhr.send(formData);
-  });
+  return Promise.all(uploads);
 }
+
 
 function handleFileSelection() {
   const input = document.getElementById('file-input');
