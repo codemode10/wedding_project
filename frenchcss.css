@@ -228,7 +228,7 @@ html {
 .banner-h1 {
   font-size: 2.3rem;
 margin-top: 22px;
-color: #b85747;
+color: #ffffff;
 }
 
 .banner-h2 {
@@ -252,7 +252,7 @@ color: #b85747;
 }
 
 .top-button {
-  margin: 10px 0;
+  margin: 10px 5px;
   padding: 0.5em 1em;
   background-color: #7ba795;
   color: white;
@@ -688,7 +688,7 @@ box-shadow: 5px 5px;
   .banner-h1 {
     font-size: 2rem;
     margin-top: 10px;
-    color: #b85747;
+    color: #ffffff;
     }
 
     .banner-h2 {
@@ -738,7 +738,7 @@ box-shadow: 5px 5px;
 }
 
 .top-button {
-  margin: 7px 0;
+  margin: 7px 5px;
   padding: 0.7em 1em;
   background-color: #7ba795;
   color: white;
