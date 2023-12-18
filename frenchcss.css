@@ -30,7 +30,7 @@ body {
 
 .icon-container {
   opacity: 0; /* Initially hidden */
-  animation: fadeIn 1s ease-in 5.2s forwards;
+  animation: fadeIn 1s ease-in 3.7s forwards;
   height: auto;
   display: flex;
   justify-content: center;
@@ -131,27 +131,27 @@ margin-bottom: 3vh;
 }
 
 .line-up:nth-child(1) {
-  animation-delay: 4.2s;
+  animation-delay: 3.2s;
 }
 
 .line-up:nth-child(2) {
-  animation-delay: 4.3s;
+  animation-delay: 3.3s;
 }
 
 .line-up:nth-child(3) {
-  animation-delay: 4.4s;
+  animation-delay: 3.4s;
 }
 
 .line-up:nth-child(4) {
-  animation-delay: 4.5s;
+  animation-delay: 3.5s;
 }
 
 .line-up:nth-child(5) {
-  animation-delay: 4.6s;
+  animation-delay: 3.6s;
 }
 
 .line-up:nth-child(6) {
-  animation-delay: 4.7s;
+  animation-delay: 3.7s;
 }
 
 @keyframes float-up {
@@ -191,15 +191,27 @@ html {
 }
 
 .section1-container {
+  position: relative;
   text-align: center;
   border-radius: 20px;
   padding: 70px;
-  background-image: url("images/chavhouse.png");
-  background-size: cover;
-  background-position: center;
   height: 67vh;
-  position: relative;
+  overflow: hidden; /* Ensure child elements don't extend beyond the container */
 
+  /* Add a pseudo-element for the background with opacity */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("wedding.jpg");
+    background-size: cover;
+    background-position: center 0%;
+    opacity: 0.9; /* Adjust the opacity as needed */
+    z-index: -1; /* Place it behind the content */
+  }
 }
 
 #playButton {
@@ -215,7 +227,7 @@ html {
 
 .banner-h1 {
   font-size: 2.3rem;
-margin-top: 50px;
+margin-top: 22px;
 color: #b85747;
 }
 

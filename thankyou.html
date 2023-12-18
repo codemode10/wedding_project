@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mellor's Wedding</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="englishcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b42a696e69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="section1-container">
+        <h1 class="banner-h1" id="typing-h1"></h1>
+        <h2 class="banner-h2" id="typing-h2"></h2>
+        <div class="button-group">
+          <a href="#wedding-day" class="top-button line-up">Wedding Day</a>
+          <a href="#gifts" class="top-button line-up">Gifts</a>
+          <a href="#image_upload" class="top-button line-up">Pictures</a>
+          <a href="#travel-provence" class="top-button line-up">Travel Provence</a>
+        </div>
+      </div>
+      <div class="icon-container">
+        <audio id="audioPlayer" class="icon-container" style="display:none;">
+        <source src="Bon Entendeur vs Tina Charles - I Love To Love (Audio).mp3" type="audio/mpeg">
+        </audio>
+        <div id="playButton" style="background-color: #b85747; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 10px;">
+          <i id="playIcon" class="fas fa-music" style="color: white; font-size: 25px;"></i>
+        </div>
+      </div>
+      <div class="section2-container scroll-animate" id="wedding-day">
+        <div class="left-section2">
+          <img class="img2" src="images/1.svg" alt="image of church">
+        </div>
+        <div class="right-section2">
+          <h1>Wedding Day, Friday 15th Sept </h1>
+          <p><b>4 pm</b> Ceremony at the church - Notre-Dame de Vie in Saint-Cannat.</p>
+          <p><b>Dress code:</b> Lounge Suit (Suit and Tie/Bow Tie). Note for the girls - sometimes the evenings can be chilly so have an extra layer ready in case the temperature drops. </p>
+          <a href="https://goo.gl/maps/4aYe4jX77y3thkgC9" class="top-button">Church Map</a>
+          <br>
+          <br>
+          <p><b>5:45 pm</b> Reception at La Bergerie (Mathilde's House).</p>
+          <a href="https://goo.gl/maps/C34oebRuiV31iz3E7" class="top-button">La Bergerie Map</a>
+          <br>
+          <br>
+          <p>The closest train station is Aix-En-Provence <b>TGV</b> (not the city centre station) and the nearest airport is Marseille. </p>
+          <p>A car is recommended to get around as Saint-Cannat is a small village with sporadic public transport.</p>
+        </div>
+      </div>
+      <div class="section4-container scroll-animate">
+        <div class="left-section4">
+          <img class="img4" src="images/3.svg" alt="">
+        </div>
+        <div class="right-section4" id="gifts">
+          <h1>Gift Registry </h1>
+          <p>For those of you who have travelled via aeroplane, your presence is your gift, which means so much to us xx.</p>
+          <br>
+          <a href="https://www.easyregistry.com.au/mellorswedding" class="top-button" target="_blank">Gift registry</a>
+        </div>
+      </div>
+      <div class="section33-container scroll-animate" id="image_upload">
+        <div class="left-section33">
+          <h1>Wedding Pictures and Videos</h1>
+          <p>Take a look at the pics and videos from the wedding. Some pretty good portraits of most of you so have a dig. ✌️</p>
+          <div class="upload-div">
+            <div class="input-wrapper">
+              <input class="choose-files" type="file" id="file-input" multiple accept="image/*,video/*" />
+            </div>
+            <a class="upload top-button" href="https://public.joomeo.com/albums/657b0c8f263b1">Pics/Vids</a>
+            <div id="file-message"></div>
+          </div>
+        </div>
+        <div class="right-section33">
+          <img class="img10" src="images/pics.svg" alt="">
+        </div>
+      </div>
+      <div class="section2-container scroll-animate" id="travel-provence">
+        <div class="left-section22">
+          <img class="travel-image" src="images/things-to-do-in-provence-luberon.jpg" alt="image of church">
+        </div>
+        <div class="right-section22">
+          <h1>Travel Provence </h1>
+          <p>Here are some postcard villages you cannot skip when in Provence. All are within an hours drive from La Bergerie.
+          </p>
+          <a class="top-button custom-rsvp" href="travelmap.html">Click here</a>
+        </div>
+      </div>
+      <footer class="footer-container">
+        <p class="footer"> Website designed by the Groom</p>
+      </footer>
+    </div>
+    <script>
+      var audioPlayer = document.getElementById('audioPlayer');
+      var playButton = document.getElementById('playButton');
+      var playIcon = document.getElementById('playIcon');
+      playButton.addEventListener('click', function() {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playIcon.className = 'fas fa-pause';
+        } else {
+            audioPlayer.pause();
+            playIcon.className = 'fas fa-music';
+        }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.11.4/cloudinary-core-shrinkwrap.min.js"></script>
+    <script src="thankyou.js"></script>
+  </body>
+</html>
